@@ -1,0 +1,40 @@
+
+.publications{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -150px;
+}
+
+.publications label{
+    background-color: #FFF;
+    margin-top: 50px;
+    width: 500px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+label input{
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    width: 90%;
+    height: 45px;
+    padding-left: 20px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.publications div{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: -250px;
+    display: flex;
+    gap: 20px;
+}
+
+.publications div p{
+    margin-left: -10px;
+    margin-top: 2px;
+}
+

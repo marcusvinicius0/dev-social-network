@@ -1,0 +1,69 @@
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background-color: #FFF;
+    position:absolute ;
+    height: 70%;
+    overflow: auto;
+    margin-top: 50px;
+    margin-left: 80px;
+    border-radius: 10px;
+}
+
+.sidebar div img{
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 10px 85px;
+}
+
+.picture{
+    display: flex;
+    justify-content: flex-end;
+}
+
+label{
+    text-align: center;
+    color: #000000;
+}
+
+hr{
+    width: 90%;
+    margin-left: 11px;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.links{
+    margin-top: 70px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.links .settings p{
+    color: #000000;
+    margin-left: 35px;
+    margin-top: -23px;
+    transition: 0.2s;
+}
+
+.links .logout {
+    margin-top: 95px;
+    margin-left: 160px;
+}
+
+.links .logout p{
+    color: #000000;
+    margin-left: -30px;
+    margin-top: -25px;
+    transition: 0.2s;
+}
+
+.links p:hover{
+    color: rgb(209, 208, 208);
+}
