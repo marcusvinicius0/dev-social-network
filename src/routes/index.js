@@ -5,7 +5,7 @@ import SignIn from '../Pages/SignIn';
 import SignUp from '../Pages/SignUp';
 
 import Dashboard from '../Pages/Dashboard';
-import Settings from '../Pages/Configurações';
+import Profile from '../Pages/Configurações';
 
 export default function MyRoutes(){
     return(
@@ -14,7 +14,7 @@ export default function MyRoutes(){
             <Route exact path="/register" component={SignUp} />
 
             <Route exact path="/dashboard" component={Dashboard} isPrivate />
-            <Route exact path="/settings" component={Settings} />
+            <Route exact path="/settings" component={Profile} isPrivate />
             
         </Switch>
     )

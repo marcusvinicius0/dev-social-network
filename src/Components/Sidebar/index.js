@@ -10,40 +10,43 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
 
 export default function SideBar() {
-    const { signOut } = useContext(AuthContext);
+    const { signOut, user } = useContext(AuthContext);
+
+
 
     return (
         <div className="sidebar">
             <div className="picture">
-                <img src={avatar} alt="foto-perfil" /> <br />
+                <img src={user.avatarUrl === null ? avatar : user.avatarUrl} alt="profile-picture" /> <br />
             </div>
 
             <label>
-                <p>Marcus Vinícius Begheli</p>
+                <p>{user.name}</p>
             </label>
 
             <hr />
 
             <div className="links">
-                <Link className="settings-config" to="/dashboard">
+                <Link to="/dashboard" >
                     <FiHome color="#000000" size={25} />
                     <p>Início</p>
                 </Link>
 
-                <Link className="settings-config" to="/dashboard">
+                <Link to="/">
                     <FiUser color="#000000" size={25} />
                     <p>Amigos</p>
                 </Link>
 
-                <Link className="settings-config" to="/settings">
+                <Link to="/settings" >
                     <FiSettings color="#000000" size={25} />
                     <p>Configurações</p>
                 </Link>
 
-                <Link className="logout" to="/">
-                    <FiLogOut color="#000000" size={25} />
-                    <button onClick={() => signOut()}>Sair</button>
-                </Link>
+                <label onClick={() => signOut()}>
+                <FiLogOut className="logout" color="#000000" size={25}/>
+                <p>Sair</p>
+                </label>
+
             </div>
 
         </div>

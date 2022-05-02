@@ -16,7 +16,7 @@
     width: 50px;
     height: 50px;
     object-fit: cover;
-    margin: 10px 85px;
+    margin: 10px 95px;
 }
 
 .picture{
@@ -44,25 +44,21 @@ hr{
     gap: 30px;
 }
 
-.links .settings-config p{
+.links  p{
     color: #000000;
     margin-left: 35px;
     margin-top: -23px;
     transition: 0.2s;
 }
 
-.links .logout {
-    margin-top: 95px;
-    margin-left: 160px;
+.links label .logout{
+    cursor: pointer;
+    margin-top: 7rem;
+    margin-left: 7rem;
 }
 
-.links .logout p{
-    color: #000000;
-    margin-left: -30px;
-    margin-top: -25px;
-    transition: 0.2s;
-}
-
-.links p:hover{
-    color: rgb(209, 208, 208);
+.links label p{
+    margin-left: 10.5rem;
+    margin-top: -1.5rem;
+    cursor: pointer;
 }
