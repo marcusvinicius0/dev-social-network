@@ -12,7 +12,7 @@ import { FiVideo } from 'react-icons/fi';
 
             <div className="publications">
                 <label>
-                    <input type="text" placeholder="Começar uma publicação" />
+                    <input type="text" placeholder="Começar uma publicação..." />
                 </label>
 
                 <div>

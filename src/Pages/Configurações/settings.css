@@ -1,0 +1,32 @@
+.settings-container{
+    width: 800px;
+    height: 480px;
+    margin-left: 25rem;
+    margin-top: -30rem;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding-left: 1rem;
+}
+
+.profile-pic{
+    display: flex;
+    justify-content: center;
+
+}
+
+.profile-pic img{
+    margin-top: 10px;
+    height: 7rem;
+}
+
+.input-settings{
+    width: 30%;
+    height: 30px;
+    cursor:default;
+    
+}
+
+.input-settings1{
+    width: 30%;
+    height: 30px;
+}

@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -150px;
+    margin-left: -100px;
+    margin-top: -33rem;
 }
 
 .publications label{
