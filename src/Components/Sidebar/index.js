@@ -43,8 +43,8 @@ export default function SideBar() {
                 </Link>
 
                 <label onClick={() => signOut()}>
-                <FiLogOut className="logout" color="#000000" size={25}/>
-                <p>Sair</p>
+                    <FiLogOut className="logout" color="#000000" size={25} />
+                    <p>Sair</p>
                 </label>
 
             </div>

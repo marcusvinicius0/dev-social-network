@@ -6,6 +6,12 @@
     margin-top: 170px;
 }
 
+header{
+    display: flex;
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 20px;
+}
 
 .login{
     background-color: #EAEAEC;
@@ -49,16 +55,12 @@ form input{
 form button{
     border-radius: 10px;
     border: none;
-    background-color: #449DD1;
+    background-color: #0D0F45;
     color: #FFF;
     height: 30px;
     z-index: 99;
     transition: 0.4s;
     margin-top: 10px;
-}
-
-form button:hover{
-    background-color: #49a7dd;
 }
 
 .functionalities{
@@ -71,10 +73,10 @@ form button:hover{
 
 .create-account{
     margin-top: 90px;
-    color: #449DD1;
+    color: #0D0F45;
 }
 
 .forgot-password{
     margin-top: 90px;
-    color: #449DD1;
+    color: #0D0F45;
 }

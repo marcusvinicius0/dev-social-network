@@ -1,5 +1,12 @@
+header{
+    display: flex;
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 20px;
+}
+
 .forgotpassword-container{
-    width: 400px;
+    width: 360px;
     height: 300px;
     border-radius: 15px;
     background-color: #EAEAEC;
@@ -10,10 +17,11 @@
 .form-forgotpassword{
     padding-left: 1vw;
     padding-top: 4em;
+    text-align: center;
 }
 
 .form-forgotpassword input{
-    width: 90%;
+    width: 105%;
     background-color: whitesmoke;
 }
 
@@ -29,10 +37,10 @@
 }
 
 .form-forgotpassword .btn-return svg{
-    margin-left: -10px;
+    margin-left: -60px;
 }
 
 .form-forgotpassword .btn-return p{
     margin-top: -25px;
-    margin-left: 12px;
+    margin-left: -20px;
 }

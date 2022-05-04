@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
 import { useContext, useState } from 'react';
 
+import logo from '../../assets/logo-social.png';
+
 export default function SignIn() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -21,10 +23,13 @@ export default function SignIn() {
     }
 
     return (
-        <main>
-            <div className="main-container">
+        <div>
+            <header>      
+                    <img src={logo} />  
+            </header>
 
-          
+
+            <div className="main-container">
                 <div className="login">
                     <div>
                         <h1>Entrar</h1>
@@ -41,7 +46,7 @@ export default function SignIn() {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
 
     )
 }

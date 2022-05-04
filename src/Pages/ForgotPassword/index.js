@@ -6,14 +6,18 @@ import { Link } from 'react-router-dom';
 
 import { FiArrowLeft } from 'react-icons/fi';
 
+import logo from '../../assets/logo-social.png';
+
 export default function ForgotPassword() {
     const { loadingAuth } = useContext(AuthContext);
     const [firstPassword, setFirstPassword] = useState('');
     const [secondPassword, setSecondPassword] = useState('');
 
     return (
-
         <div>
+            <header>
+                <img src={logo} />
+            </header>
             <div className="forgotpassword-container">
                 <form className="form-forgotpassword" onSubmit={() => { }}>
                     Nova senha:

@@ -1,5 +1,13 @@
+header{
+    display: flex;
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 20px;
+}
+
+
 .access-account{
     margin-top: 80px;
-    color: #449DD1;
+    color: #0D0F45;
 }
 

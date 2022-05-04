@@ -1,5 +1,6 @@
 import './dashboard.css';
 
+import Modal from '../../Components/Modal';
 import SideBar from '../../Components/Sidebar';
 // import api from '../../services/api';
 
@@ -10,32 +11,21 @@ import { useEffect, useState } from 'react';
 
 // //http://servicodados.ibge.gov.br/api/v3/noticias/
 function Dashboard() {
-    // const [news, setNews] = useState([]);
-
-    // useEffect(() => {
-
-    //     async function loadNews() {
-    //         const response = await api.get("api/v3/noticias")
-
-    //         setNews(response.data)
-
-    //     }
-
-    //     loadNews();
-
-    // }, [])
     const [text, setText] = useState('');
+    const [showPostModal, setShowPostModal] = useState(false);
+    // const [detail, setDetail] = useState();
 
-    function HandleText(){
+    function togglePostModal(){
+        setShowPostModal(!showPostModal)     //troca de true pra falso --- abrindo e fechando
+        // setDetail(item)                    // vai ser o conteúdo da public
+    }
+    
+
+    function HandleText(e){
         console.log(text)
 
-
-        useEffect(()=>{
-
-            setText()
-
-        }, [])
     }
+
 
     return (
         <div className="main-container-dashboard">
@@ -43,8 +33,7 @@ function Dashboard() {
 
             <div className="publications">
                 <label>
-                    <input type="text" placeholder="Começar uma publicação..." value={text} onChange={ (e) => setText(e.target.value)} />
-                    <button onClick={HandleText}>publicar</button>
+                    <input onClick={()=> togglePostModal()} type="text" placeholder="Começar uma publicação..." value={text} onChange={ (e) => setText(e.target.value)}  />
                 </label>
 
                 <div>
@@ -57,7 +46,7 @@ function Dashboard() {
             </div>
 
             <div className="feed">
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tellus interdum sollicitudin torquent eros mauris morbi, congue porttitor lectus quisque imperdiet et iaculis ut inceptos sed leo non. Donec ex interdum sodales libero lectus sem facilisi habitasse, sagittis metus sociosqu mollis phasellus fames bibendum arcu nisi, vi</p> 
+                    {text}
             </div>
 
             <div className='api-news'>
@@ -68,6 +57,13 @@ function Dashboard() {
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tellus interdum sollicitudin torquent eros mauris morbi, congue porttitor lectus quisque imperdiet et iaculis ut inceptos sed leo non. Donec ex interdum sodales libero lectus sem facilisi habitasse, sagittis metus sociosqu mollis phasellus fames bibendum arcu nisi, viverra ut suspendisse morbi cubilia a magna. Elementum suscipit orci sit semper elit velit fermentum maecenas taciti, curae lacus vel posuere sagittis ante nunc malesuada, nam montes blan</p>
                     </article>
             </div>
+
+            {showPostModal && (
+                <Modal
+                    // conteudo={detail}
+                    close={togglePostModal}
+                />
+            )}
 
         </div>
     )
