@@ -11,7 +11,7 @@ import { AuthContext } from '../../contexts/auth';
 
 export default function SideBar() {
     const { signOut, user } = useContext(AuthContext);
-
+    // const [imageAvatar, setImageAvatar] = useState(null);
 
 
     return (
@@ -32,7 +32,7 @@ export default function SideBar() {
                     <p>Início</p>
                 </Link>
 
-                <Link to="/">
+                <Link to="/friends">
                     <FiUser color="#000000" size={25} />
                     <p>Amigos</p>
                 </Link>

@@ -49,6 +49,11 @@ hr{
     margin-left: 35px;
     margin-top: -23px;
     transition: 0.2s;
+    width: 25%;
+}
+
+.links p:hover{
+    color: #d2d7df;
 }
 
 .links label .logout{

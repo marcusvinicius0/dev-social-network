@@ -1,0 +1,22 @@
+.erro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vw;
+}
+
+.erro h1{
+    font-size: 50px;
+}
+
+.erro .returning{
+    margin-top: 40px;
+    margin-left: -60px;
+    font-size: 25px;
+    color: #000000;
+    transition: all .3s;
+}
+
+.erro .returning:hover{
+    color: blueviolet;
+}

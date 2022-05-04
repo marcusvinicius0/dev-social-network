@@ -29,7 +29,7 @@ label input{
 .publications div{
     position: absolute;
     margin-top: 120px;
-    margin-left: -250px;
+    margin-left: -300px;
     display: flex;
     gap: 20px;
 }
@@ -39,3 +39,20 @@ label input{
     margin-top: 2px;
 }
 
+.feed{
+    margin-left: 27.5vw;
+    margin-top: 20px;
+    background-color: #FFF;
+    width: 500px;
+    height: 100%;
+    position: absolute;
+}
+
+.api-news{
+    background-color: #FFF;
+    width: 300px;
+    height: 300px;
+    margin-left: 73vw;
+    margin-top: -9vw;
+    border-radius: 7px;
+}

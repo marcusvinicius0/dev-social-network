@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
 import { useContext, useState } from 'react';
 
-function SignIn() {
+export default function SignIn() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -37,7 +37,7 @@ function SignIn() {
 
                     <div className="functionalities">
                         <Link to="/register" className="create-account">Criar uma conta</Link>
-                        <p className="forgot-password">Esqueceu a senha?</p>
+                        <Link to="/forgotpassword" className="forgot-password">Esqueceu a senha?</Link>
                     </div>
                 </div>
             </div>
@@ -45,5 +45,3 @@ function SignIn() {
 
     )
 }
-
-export default SignIn;
