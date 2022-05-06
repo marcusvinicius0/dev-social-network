@@ -1,82 +1,164 @@
-.main-container{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 170px;
+* {
+    font-family: 'Poppins', sans-serif;
 }
 
-header{
-    display: flex;
-    position: absolute;
-    margin-top: -220px;
-    margin-left: 20px;
-}
-
-.login{
-    background-color: #EAEAEC;
-    width: 500px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-}
-
-h1{
-    text-align: center;
-    margin-top: -5px;
-    margin-bottom: 50px;
-}
-
-form{
-    margin-top: 1.5em;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: -10px;
-}
-
-.input-email{
-    /* margin-top: 70px; */
-}
-
-form input{
-    padding-left: 10px;
-    border-radius: 10px;
-    border: 0;
-    height: 30px;
-    margin-top: 5px;
-    z-index: 99;
-}
-
-form button{
-    border-radius: 10px;
-    border: none;
-    background-color: #0D0F45;
-    color: #FFF;
-    height: 30px;
-    z-index: 99;
-    transition: 0.4s;
-    margin-top: 10px;
-}
-
-.functionalities{
+.pageLogin {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    gap: 180px;
-    margin-top: -65px;
+    margin-top: 0;
+}
+
+.haveAccount {
+    width: 50%;
+    background: linear-gradient(to top right, #021B79, #045AC5 );
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.haveAccount h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.haveAccount p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.haveAccount a {
+    background: #045AC5;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+
+.haveAccount a:hover {
+    opacity: 0.8;
+}
+
+.haveAccount a:active {
+    opacity: 0.6;
+}
+
+.registerInfos {
+    background: #E5E5E5;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+
+.registerInfosContent {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.registerInfosContent h1 {
+    font-size: 1.5rem;
+}
+
+.registerInfosContent div {
+    width: 307px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid rgb(0,0,0,0.35);
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.registerInfosContent div svg {
+    width: 6%;
+    color: rgb(0,0,0,0.65);
+    height: 100%;
+    margin-left: 10px;
+    font-size: 0.5rem;
+}
+.registerInfosContent div input {
+    width: 90%;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    margin-left: 1rem;
+}
+
+.registerInfosContent button {
+    width: 307px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid rgb(0,0,0,0.35);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #045AC5;
+    border: 0;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.registerInfosContent a {
+    margin: 0 auto;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 870px) {
+    .haveAccount h1 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
     
+    .haveAccount p {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .registerInfosContent div {
+        width: 307px;
+        height: 50px;
+    }
+
+    .registerInfosContent button {
+        width: 307px;
+        height: 40px;
+    }
 }
 
-.create-account{
-    margin-top: 90px;
-    color: #0D0F45;
-}
+@media screen and (max-width: 690px) { 
+    .pageLogin {
+        flex-direction: column;
+    }
 
-.forgot-password{
-    margin-top: 90px;
-    color: #0D0F45;
-}
+    .registerInfos {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .haveAccount {
+        width: 100%;
+        padding: 4.5rem;
+    }
+} 
