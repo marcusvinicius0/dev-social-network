@@ -12,7 +12,8 @@ import axios from "axios";
 
 
 const api = axios.create({
-    baseURL: 'http://servicodados.ibge.gov.br/api/v3/'
+    // baseURL: 'https://newsapi.org'
+    baseURL: 'https://newsapi.org'
 });
 
 export default api;

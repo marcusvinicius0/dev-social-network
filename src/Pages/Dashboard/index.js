@@ -2,7 +2,7 @@ import './dashboard.css';
 
 import Modal from '../../Components/Modal';
 import SideBar from '../../Components/Sidebar';
-// import api from '../../services/api';
+import api from '../../services/api';
 
 import { AiFillPicture } from 'react-icons/ai';
 import { FiVideo } from 'react-icons/fi';
@@ -11,21 +11,29 @@ import { useEffect, useState } from 'react';
 
 // //http://servicodados.ibge.gov.br/api/v3/noticias/
 function Dashboard() {
-    const [text, setText] = useState('');
     const [showPostModal, setShowPostModal] = useState(false);
-    // const [detail, setDetail] = useState();
+    const [showNews, setShowNews] = useState([]);
 
     function togglePostModal(){
         setShowPostModal(!showPostModal)     //troca de true pra falso --- abrindo e fechando
         // setDetail(item)                    // vai ser o conteúdo da public
     }
+
     
+    // useEffect(()=>{
 
-    function HandleText(e){
-        console.log(text)
+    //     async function loadApi(){
+    //         const response = await api.get('v2/everything?q=tesla&from=2022-04-05&sortBy=publishedAt')
+    //         // const response = await api.get('r-api/?api=filmes')
 
-    }
+    //         setShowNews(response.data)
+    //     }
 
+    //     loadApi();
+
+    //     console.log(showNews.data)
+
+    // }, []);
 
     return (
         <div className="main-container-dashboard">
@@ -33,7 +41,7 @@ function Dashboard() {
 
             <div className="publications">
                 <label>
-                    <input onClick={()=> togglePostModal()} type="text" placeholder="Começar uma publicação..." value={text} onChange={ (e) => setText(e.target.value)}  />
+                    <input onClick={()=> togglePostModal()} type="text" placeholder="Começar uma publicação..."  />
                 </label>
 
                 <div>
@@ -46,16 +54,17 @@ function Dashboard() {
             </div>
 
             <div className="feed">
-                    {text}
+           
             </div>
 
             <div className='api-news'>
-                    <article>
-                        <h2><i>API notícias</i></h2>
-                        <p>info</p>
-                        <p>img</p> <br/>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tellus interdum sollicitudin torquent eros mauris morbi, congue porttitor lectus quisque imperdiet et iaculis ut inceptos sed leo non. Donec ex interdum sodales libero lectus sem facilisi habitasse, sagittis metus sociosqu mollis phasellus fames bibendum arcu nisi, viverra ut suspendisse morbi cubilia a magna. Elementum suscipit orci sit semper elit velit fermentum maecenas taciti, curae lacus vel posuere sagittis ante nunc malesuada, nam montes blan</p>
-                    </article>
+                {/* {showNews.map((showNew) => {
+                    return(
+                        <article key={showNew.id}>
+                            <strong>{showNew.title}</strong>
+                        </article>
+                    )
+                })} */}
             </div>
 
             {showPostModal && (

@@ -3,8 +3,9 @@ import './sidebar.css';
 import avatar from '../../assets/avatar.png';
 
 import { FiHome, FiUser, FiSettings, FiLogOut } from 'react-icons/fi';
+import { AiOutlineMessage } from 'react-icons/ai';
 
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { AuthContext } from '../../contexts/auth';
@@ -12,7 +13,6 @@ import { AuthContext } from '../../contexts/auth';
 export default function SideBar() {
     const { signOut, user } = useContext(AuthContext);
     // const [imageAvatar, setImageAvatar] = useState(null);
-
 
     return (
         <div className="sidebar">
@@ -35,6 +35,11 @@ export default function SideBar() {
                 <Link to="/friends">
                     <FiUser color="#000000" size={25} />
                     <p>Amigos</p>
+                </Link>
+
+                <Link to="/dashboard">
+                    <AiOutlineMessage color="#000000" size={25} />
+                    <p>Mensagens</p>
                 </Link>
 
                 <Link to="/settings" >

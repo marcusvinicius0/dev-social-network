@@ -1,4 +1,4 @@
-
+import './friends.css';
 
 import SideBar from "../../Components/Sidebar";
 
@@ -8,9 +8,9 @@ function Friends() {
         <div>
             <SideBar />
 
+            <div className="friends-container">
+                <h1>Meus amigos</h1>
 
-            <div>
-                <h1>your friends PAGE</h1>
             </div>
         </div>
     )
