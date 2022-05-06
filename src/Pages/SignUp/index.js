@@ -6,6 +6,9 @@ import { AuthContext } from '../../contexts/auth';
 
 import logo from '../../assets/logo-social.png';
 
+import { FaUser, FaLock } from 'react-icons/fa'
+import  { MdEmail } from 'react-icons/md'
+
 function SignUp() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -22,29 +25,39 @@ function SignUp() {
 
     return (
         <div>
-            <header>
-                <img src={logo} />
-            </header>
-
             <div className="main-container">
-                <div className="login">
-                    <div className="bg-h1">
-                        <h1>Cadastre sua conta</h1>
+                <div className="pageRegister">
+                    <div className="dontHaveAccount">
+                        <div className="dontHaveAccountContent">
+                            <h1>Dev Social Network</h1>
+                            <p>Do already have an account?</p>
+                            <Link to="/">Login</Link>
+                        </div>
                     </div>
+                    <div className="registerInfos">
+                        <div className="registerInfosContent">
+                            <h1>Hello, welcome!</h1>
+                            <p>Sign Up to Get Started</p>
 
-                    <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Digite seu nome" value={name} onChange={(e) => setName(e.target.value)} />
-                        <input type="text" className="input-email" placeholder="email@email.com" value={email} onChange={(e) => setEmail(e.target.value)} />
-                        <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} />
-                        <button type="submit"> {loadingAuth ? 'Cadastrando...' : 'Cadastrar'} </button>
-                    </form>
-
-                    <div className="functionalities">
-                        <Link to="/" className="access-account">Já possui uma conta? Entre aqui.</Link>
+                            <form onSubmit={handleSubmit}>
+                                <div>
+                                    <FaUser />
+                                    <input type="text" placeholder="Digite seu nome" value={name} onChange={(e) => setName(e.target.value)} />
+                                </div>
+                                <div>
+                                    <MdEmail />
+                                    <input type="text" className="input-email" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                </div>
+                                <div>
+                                    <FaLock />
+                                    <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} />
+                                </div>
+                                <button type="submit"> {loadingAuth ? 'Cadastrando...' : 'Cadastrar'} </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
     )
