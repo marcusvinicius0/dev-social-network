@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    background-color: #FFF;
+    background-color: var(--white);
     width: 700px;
     height: 550px;
     margin-left: 25rem;
@@ -55,7 +55,7 @@
 }
 
 .form-profile input{
-    background-color: whitesmoke;
+    background-color: var(--whitesmoke);
     width: 60%;
 }
 
