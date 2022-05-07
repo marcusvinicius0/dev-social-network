@@ -1,0 +1,61 @@
+.chat {
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    width: 300px;
+    background: gray;
+    border-radius: 11px 11px 0 0;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+.headerChat {
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerChat div {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.headerChat img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+
+}
+
+.headerChat button {
+    background: none;
+    border: 0;
+}
+
+.headerChat svg {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.chatOff {
+    height: 50px;
+    transition: 0.2s;
+}
+
+.chatOn {
+    height: 600px;
+    transition: 0.2s;
+}
+
+.contentChat {
+    background: #fff;
+    height: 550px;
+    width: 100%;
+    background: rgb(0,0,0,0.2)
+}
