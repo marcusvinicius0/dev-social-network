@@ -13,10 +13,10 @@
     margin-top: 40px;
     margin-left: -60px;
     font-size: 25px;
-    color: #000000;
+    color: var(--black);
     transition: all .3s;
 }
 
 .erro .returning:hover{
-    color: blueviolet;
+    color:var(--blueviolet);
 }

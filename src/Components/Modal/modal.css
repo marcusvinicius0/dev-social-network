@@ -4,7 +4,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0,0,0, 0.6);
+    background: var(--blackLigth);
     z-index: 99;
 }
 
@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    background-color: #FFF;
+    background-color: var(--white);
     height: 300px;
     border-radius: 15px;
 }

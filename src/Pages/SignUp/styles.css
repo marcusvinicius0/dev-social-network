@@ -12,8 +12,8 @@
 
 .dontHaveAccount {
     width: 50%;
-    background: linear-gradient(to top right, #021B79, #045AC5 );
-    color: #fff;
+    background: var(--blueGradient);
+    color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,10 +31,10 @@
 }
 
 .dontHaveAccount a {
-    background: #045AC5;
+    background: var(--blue);
     font-weight: 400;
     font-size: 0.8rem;
-    color: #fff;
+    color: var(--white);
     width: 150px;
     height: 30px;
     display: flex;
@@ -55,13 +55,13 @@
 }
 
 .registerInfos {
-    background: #E5E5E5;
+    background: var(--grey);
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #333333;
+    color: var(--greyBlack)
 }
 
 .registerInfosContent {
@@ -78,7 +78,7 @@
     width: 307px;
     height: 60px;
     border-radius: 30px;
-    border: 1px solid rgb(0,0,0,0.35);
+    border: 1px solid var(--black35);
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -86,7 +86,7 @@
 
 .registerInfosContent div svg {
     width: 6%;
-    color: rgb(0,0,0,0.65);
+    color:var(--black65);
     height: 100%;
     margin-left: 10px;
     font-size: 0.5rem;
@@ -103,14 +103,14 @@
     width: 307px;
     height: 50px;
     border-radius: 30px;
-    border: 1px solid rgb(0,0,0,0.35);
+    border: 1px solid var(--black35);
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #045AC5;
+    background: var(--blue);
     border: 0;
-    color: #fff;
+    color: var(--white);
     font-size: 0.9rem;
     font-weight: 500;
 }

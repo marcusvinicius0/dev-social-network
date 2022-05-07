@@ -9,7 +9,7 @@ header{
     width: 360px;
     height: 300px;
     border-radius: 15px;
-    background-color: #EAEAEC;
+    background-color: var(--greyLigth);
     margin-top: 10em;
     margin-left: 30em;
 }
@@ -22,7 +22,7 @@ header{
 
 .form-forgotpassword input{
     width: 105%;
-    background-color: whitesmoke;
+    background-color: var(--whitesmoke);
 }
 
 .form-forgotpassword button{
@@ -33,7 +33,7 @@ header{
 .form-forgotpassword .btn-return{
     margin-left: 20em;
     margin-top: -2em;
-    color: #000000;
+    color: var(--black)
 }
 
 .form-forgotpassword .btn-return svg{
