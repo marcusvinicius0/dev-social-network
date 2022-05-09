@@ -31,15 +31,15 @@ export default function SignIn() {
                     <div className="haveAccount">
                         <div className="haveAccountContent">
                             <h1>Dev Social Network</h1>
-                            <p>Don't have an account yet?</p>
-                            <Link to="/register">Register</Link>
+                            <p>Não tem uma conta ainda?</p>
+                            <Link to="/register">Cadastre</Link>
                         </div>
                     </div>
 
                     <div className="registerInfos">
                         <div className="registerInfosContent">
-                            <h1>Hello again!</h1>
-                            <p>Welcome back</p>
+                            <h1>Olá de novo!</h1>
+                            <p>Bem vindo(a) de vola</p>
 
                             <form onSubmit={handleSubmit}>
                                 <div>

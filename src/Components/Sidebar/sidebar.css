@@ -3,7 +3,7 @@
     padding: 0;
     width: 270px;
     background-color: #FFF;
-    height: 500px;
+    height: 480px;
     overflow: auto;
     margin-top: 50px;
     margin-left: 80px;
@@ -58,8 +58,8 @@ hr{
 
 .links label .logout{
     cursor: pointer;
-    margin-top: 7rem;
-    margin-left: 7rem;
+    margin-top: 20px;
+    margin-left: 7px;
 }
 
 .links label p{

@@ -26,7 +26,7 @@ function Dashboard() {
     //         const response = await api.get('v2/everything?q=tesla&from=2022-04-05&sortBy=publishedAt')
     //         // const response = await api.get('r-api/?api=filmes')
 
-    //         setShowNews(response.data)
+    //         setShowNews(response.itens)
     //     }
 
     //     loadApi();
@@ -61,7 +61,7 @@ function Dashboard() {
                 {/* {showNews.map((showNew) => {
                     return(
                         <article key={showNew.id}>
-                            <strong>{showNew.title}</strong>
+                            <strong>{showNew.titulo}</strong>
                         </article>
                     )
                 })} */}

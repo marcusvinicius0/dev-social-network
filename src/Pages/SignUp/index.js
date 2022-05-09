@@ -4,8 +4,6 @@ import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
 
-import logo from '../../assets/logo-social.png';
-
 import { FaUser, FaLock } from 'react-icons/fa'
 import  { MdEmail } from 'react-icons/md'
 
@@ -30,14 +28,14 @@ function SignUp() {
                     <div className="dontHaveAccount">
                         <div className="dontHaveAccountContent">
                             <h1>Dev Social Network</h1>
-                            <p>Do already have an account?</p>
+                            <p>Já tem uma conta?</p>
                             <Link to="/">Login</Link>
                         </div>
                     </div>
                     <div className="registerInfos">
                         <div className="registerInfosContent">
-                            <h1>Hello, welcome!</h1>
-                            <p>Sign Up to Get Started</p>
+                            <h1>Olá, seja bem vindo(a)!</h1>
+                            <p>Se cadastre para começar</p>
 
                             <form onSubmit={handleSubmit}>
                                 <div>
