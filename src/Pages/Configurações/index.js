@@ -99,7 +99,7 @@ function Profile() {
 
 
     return (
-        <div>
+        <div className="containerAll">
             <Sidebar />
 
             <div className="container">

@@ -5,7 +5,7 @@ import SideBar from "../../Components/Sidebar";
 
 function Friends() {
     return (
-        <div>
+        <div className="containerAll">
             <SideBar />
 
             <div className="friends-container">

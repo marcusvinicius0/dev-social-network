@@ -1,0 +1,45 @@
+.header {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    height: 3.5rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.optionsNav {
+    display: flex;
+}
+
+.optionsNav div {
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.optionsNav div:hover {
+    color: #021B79;
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+.optionsNav div svg {
+    font-size: 1.4rem;
+}
+
+.optionsNav div span {
+    font-size: 0.7rem;
+}
+
+.buttonSignOut {
+    font-size: 1.4rem;
+    background: transparent;
+    border: none;
+}

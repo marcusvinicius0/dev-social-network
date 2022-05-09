@@ -36,3 +36,7 @@ ul{
 input, textarea {
     outline: none;
 }
+
+.containerAll {
+    margin-top: 5rem;
+}

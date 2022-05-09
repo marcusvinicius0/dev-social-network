@@ -14,6 +14,7 @@ import Error from '../Pages/Error'
 
 export default function MyRoutes(){
     return(
+        <>
         <Switch>
             <Route exact path="/" component={SignIn}  />
             <Route exact path="/register" component={SignUp} />
@@ -26,5 +27,6 @@ export default function MyRoutes(){
             <Route  path="*" component={Error} />
             
         </Switch>
+        </>
     )
 }
