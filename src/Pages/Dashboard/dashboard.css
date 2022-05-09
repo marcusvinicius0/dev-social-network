@@ -1,58 +1,84 @@
+.main-container-dashboard {
+    display: flex;
+    justify-content: space-evenly;
+}
 
-.publications{
+.publications {
+    width: 500px;
+}
+
+.startPublication {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,0.15);
+    background: #fff;
+}
+
+.startPublication label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -100px;
-    margin-top: -34.5rem;
+    gap: 1rem;
 }
 
-.publications label{
-    background-color: #FFF;
-    margin-top: 50px;
-    width: 500px;
-    height: 120px;
-    border-radius: 10px;
+.startPublication label img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-label input{
-    margin-top: 20px;
-    border-radius: 20px;
-    border: none;
-    width: 90%;
-    height: 45px;
-    padding-left: 20px;
-    background-color: whitesmoke;
-    cursor: pointer;
+.startPublication label input {
+    width: 80%;
+    height: 50px;
+    border-radius: 40px;
+    outline:none;
+    padding-left: 10px;
+    border: 1px solid rgb(0,0,0,0.65);
 }
 
-.publications div{
-    position: absolute;
-    margin-top: 120px;
-    margin-left: -300px;
+.togglesOnStartPublication {
     display: flex;
-    gap: 20px;
+    gap: 3rem;
+    margin-left: 2rem;
 }
 
-.publications div p{
-    margin-left: -10px;
-    margin-top: 2px;
+.togglesOnStartPublication div {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.4s;
 }
 
-.feed{
-    margin-left: 27.5vw;
-    margin-top: 20px;
-    background-color: #FFF;
-    width: 500px;
-    height: 100%;
-    position: absolute;
+.togglesOnStartPublication div:hover {
+    background:rgb(0,0,0,0.11);
+}
+
+.togglesOnStartPublication div p {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: rgb(0,0,0,0.75);
+}
+
+.feed {
+    width: 100%;
+    height: 80vh;
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,0.15);
 }
 
 .api-news{
-    background-color: #FFF;
     width: 300px;
-    height: 300px;
-    margin-left: 73vw;
-    margin-top: -9vw;
-    border-radius: 7px;
+    height: 50vh;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,0.15);
 }

@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
 import { useContext, useState } from 'react';
 
-import logo from '../../assets/logo-social.png';
 
 import { FaUser, FaLock } from 'react-icons/fa'
 
@@ -39,7 +38,7 @@ export default function SignIn() {
                     <div className="registerInfos">
                         <div className="registerInfosContent">
                             <h1>Olá de novo!</h1>
-                            <p>Bem vindo(a) de vola</p>
+                            <p>Bem vindo(a) de volta</p>
 
                             <form onSubmit={handleSubmit}>
                                 <div>

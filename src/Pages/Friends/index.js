@@ -5,13 +5,15 @@ import SideBar from "../../Components/Sidebar";
 
 function Friends() {
     return (
-        <div>
-            <SideBar />
+        <div className="containerAll">
+            {/* <SideBar /> */}
 
-            <div className="friends-container">
-                <h1>Meus amigos</h1>
-
+            <div className="container-messages">
+                <div className="messages">
+                    <p>Mensagens</p>
+                </div>
             </div>
+           
         </div>
     )
 }

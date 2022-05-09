@@ -14,7 +14,7 @@ export default function ForgotPassword() {
     const [secondPassword, setSecondPassword] = useState('');
 
     return (
-        <div>
+        <div className="containerAll">
             <header>
                 <img src={logo} />
             </header>

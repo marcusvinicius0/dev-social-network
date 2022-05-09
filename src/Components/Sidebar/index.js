@@ -32,10 +32,10 @@ export default function SideBar() {
                     <p>Início</p>
                 </Link>
 
-                <Link to="/friends">
+                {/* <Link to="/friends">
                     <FiUser color="#000000" size={25} />
                     <p>Amigos</p>
-                </Link>
+                </Link> */}
 
                 <Link to="/dashboard">
                     <AiOutlineMessage color="#000000" size={25} />
