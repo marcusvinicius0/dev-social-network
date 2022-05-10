@@ -7,7 +7,7 @@ import ForgotPassword from '../Pages/ForgotPassword';
 
 import Dashboard from '../Pages/Dashboard';
 import Profile from '../Pages/Configurações';
-import Friends from '../Pages/Friends';
+import Messages from '../Pages/Messages';
 
 import Error from '../Pages/Error'
 
@@ -21,7 +21,7 @@ export default function MyRoutes(){
             <Route exact path="/forgotpassword" component={ForgotPassword} />
 
             <Route exact path="/dashboard" component={Dashboard} isPrivate />
-            <Route exact path="/friends" component={Friends} isPrivate />
+            <Route exact path="/messages" component={Messages} isPrivate />
             <Route exact path="/settings" component={Profile} isPrivate />
 
             <Route  path="*" component={Error} />

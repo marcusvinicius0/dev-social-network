@@ -8,6 +8,7 @@ import firebase from '../../services/firebaseConnection';
 
 import { FiSettings, FiUpload } from 'react-icons/fi';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 function Profile() {
     const { user, setUser, storageUser } = useContext(AuthContext);
@@ -36,8 +37,6 @@ function Profile() {
                 return null;
             }
         }
-
-        // console.log(e.target.files[0])
     }
 
     async function handleUpload() {
@@ -100,35 +99,49 @@ function Profile() {
 
     return (
         <div className="containerAll">
-            <Sidebar />
-            <div className="container">
-                <form className="form-profile" onSubmit={handleSave}>
-                    <label className="label-avatar">
-                        <span>
-                            <FiUpload color="#FFF" size={25} />
-                        </span>
+            <div className='main-seetings-container'>
+                <div className="container-settings">
 
-                        <input className="input-file" type="file" accept="image/*" onChange={handleFile} /> <br />
-                        {avatarUrl === null ?
-                            <img src={avatar} width="150" height="150" alt="user-profile-picture" />
-                            :
-                            <img src={avatarUrl} width="150" height="150" alt="user-profile-picture" />
-                        }<br />
+                    <FiSettings className="icon-settings" size={35} color="#000000" />
 
-                    </label>
+                    <form className="form-profile" onSubmit={handleSave}>
+                        <label className="label-avatar">
+                            <span>
+                                <FiUpload color="#FFF" size={25} />
+                            </span>
 
-                    <label className="label-informations">Nome</label>
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Edite seu nome...." />
+                            <input className="input-file" type="file" accept="image/*" onChange={handleFile} /> <br />
+                            {avatarUrl === null ?
+                                <img src={avatar} width="150" height="150" alt="user-profile-picture" />
+                                :
+                                <img src={avatarUrl} width="150" height="150" alt="user-profile-picture" />
+                            }<br />
 
-                    <label className='label-informations'>Email</label>
-                    <input type="email" value={email} disabled={true} />
+                        </label>
 
-                    <label className="label-informations">Descrição</label>
-                    <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
 
-                    <button type="submit">Salvar</button>
-                </form>
+                        <label className="div-informations">
+                            Nome
+                            <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Edite seu nome...." />
+                            Email
+                            <input type="email" value={email} disabled={true} />
+
+                            <label>Descrição</label>
+                            <textarea maxLength="60" value={description} onChange={(e) => setDescription(e.target.value)} placeholder=" Max. 60 caracteres" />
+
+                            <div className="change-password">
+                                <Link to="/dashboard">
+                                    <p>Alterar senha</p>
+                                </Link>
+                            </div>
+
+                            <button type="submit">Salvar</button>
+                        </label>
+
+                    </form>
+                </div>
             </div>
+
         </div>
 
     )

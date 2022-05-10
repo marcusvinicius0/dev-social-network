@@ -4,36 +4,47 @@ import { useContext, useState } from "react"
 import { AuthContext } from "../../contexts/auth"
 import { Link } from 'react-router-dom';
 
-import { FiArrowLeft } from 'react-icons/fi';
-
-import logo from '../../assets/logo-social.png';
+import { FaLock } from 'react-icons/fa';
 
 export default function ForgotPassword() {
-    const { loadingAuth } = useContext(AuthContext);
+    const { loadingAuth, user, setUser } = useContext(AuthContext);
     const [firstPassword, setFirstPassword] = useState('');
     const [secondPassword, setSecondPassword] = useState('');
 
-    return (
-        <div className="containerAll">
-            <header>
-                <img src={logo} />
-            </header>
-            <div className="forgotpassword-container">
-                <form className="form-forgotpassword" onSubmit={() => { }}>
-                    Nova senha:
-                    <input type="password" placeholder="******" required value={firstPassword} onChange={(e) => setFirstPassword(e.target.value)} />
-                    Digite a senha novamente:
-                    <input type="password" placeholder="******" required value={secondPassword} onChange={(e) => setSecondPassword(e.target.value)} />
 
-                    <button type="submit">{loadingAuth ? 'Salvando...' : 'Salvar alterações'}</button>
-                    <Link className="btn-return" to="/">
-                        <FiArrowLeft color='#000000' size={25} />
-                        <p>Voltar</p>
-                    </Link>
-                </form>
+    function handleUpload() {
+
+    }
+
+    return (
+        <div className="pageLogin">
+            <div className="haveAccount">
+                <div className="haveAccountContent">
+                    <h1>Dev Social Network</h1>
+                    <p>Entre agora mesmo!</p>
+                    <Link to="/">Faça login</Link>
+                </div>
+            </div>
+
+            <div className="registerInfos">
+                <div className="registerInfosContent">
+                    <h1>Mudar minha senha</h1>
+                    <form onSubmit={handleUpload}>
+                        <p className="typenewpassword">Digite sua nova senha</p>
+                        <div>
+                            <FaLock />
+                            <input className="input-email" type="password" placeholder="*******" value={firstPassword} onChange={(e) => setFirstPassword(e.target.value)} required />
+                        </div>
+                        <p className="typenewpassword">Digite novamente</p>
+                        <div>
+                            <FaLock />
+                            <input type="password" placeholder="*******" value={secondPassword} onChange={(e) => setSecondPassword(e.target.value)} required />
+                        </div>
+                        <button type="submit">{loadingAuth ? 'Carregando...' : 'Mudar'}</button>
+                    </form>
+                </div>
             </div>
         </div>
-
     )
 }
 

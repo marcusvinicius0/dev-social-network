@@ -19,39 +19,43 @@ export function Header() {
         <>
             {user && (
                 <div className="header">
-                    <img src={logo} alt="logo" className="logo" />
+                    <span className="logo">
+                        <img src={logo} alt="logo"  />
+                    </span>
                     <nav className="optionsNav">
 
                         <Link to="/dashboard">
                             <div>
-                                <AiOutlineHome color="#000000" />
+                                <AiOutlineHome color="#000000" size={23} />
                                 <span>Início</span>
-                            </div>
-                        </Link>
-
-                        <Link to="/friends">
-                            <div>
-                                <FaUsers color="#000000" />
-                                <span>Amigos</span>
                             </div>
                         </Link>
 
                         <Link to="/dashboard">
                             <div>
-                                <BsFillChatDotsFill color="#000000" />
+                                <FaUsers color="#000000"  size={23}/>
+                                <span>Amigos</span>
+                            </div>
+                        </Link>
+
+                        <Link to="/messages">
+                            <div>
+                                <BsFillChatDotsFill color="#000000"  size={23} />
                                 <span>Mensagens</span>
                             </div>
                         </Link>
 
                         <Link to="/settings">
                             <div>
-                                <FiSettings color="#000000" />
+                                <FiSettings color="#000000"  size={23} />
                                 <span>Configurações</span>
                             </div>
                         </Link>
                     </nav>
 
-                    <button onClick={signOut} className="buttonSignOut"><FiLogOut /></button>
+                    <button onClick={signOut} className="buttonSignOut"><FiLogOut size={25} />
+                        <label>Sair</label>
+                    </button>
                 </div>
             )}
         </>

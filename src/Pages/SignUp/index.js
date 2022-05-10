@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
 
 import { FaUser, FaLock } from 'react-icons/fa'
-import  { MdEmail } from 'react-icons/md'
+import { MdEmail } from 'react-icons/md'
 
 function SignUp() {
     const [name, setName] = useState('');
@@ -40,15 +40,15 @@ function SignUp() {
                             <form onSubmit={handleSubmit}>
                                 <div>
                                     <FaUser />
-                                    <input type="text" placeholder="Digite seu nome" value={name} onChange={(e) => setName(e.target.value)} />
+                                    <input type="text" placeholder="Digite seu nome" value={name} onChange={(e) => setName(e.target.value)} required />
                                 </div>
                                 <div>
                                     <MdEmail />
-                                    <input type="text" className="input-email" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                    <input type="text" className="input-email" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                                 </div>
                                 <div>
                                     <FaLock />
-                                    <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} />
+                                    <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
                                 </div>
                                 <button type="submit"> {loadingAuth ? 'Cadastrando...' : 'Cadastrar'} </button>
                             </form>

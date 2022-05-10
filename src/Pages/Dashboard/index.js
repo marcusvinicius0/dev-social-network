@@ -60,10 +60,12 @@ function Dashboard() {
                         <br/>
                         <ul>
                         <strong>Coisas que vou fazer</strong>
-                            <li>Página Amigos []</li>
-                            <li>Diminuir inputs de SignIn/SignUp - por algum motivo não to conseguindo mudar...  []</li>
-                            <li>Arrumar pag - Forgot Password - fazer lógica pra mudar a senha - []</li>
-                            <li></li>
+                            <li>Page friends [] </li>
+                            <li>Page Profile []</li>
+                            <li>Diminuir inputs page SignIn/SignUp/ForgotPassword []</li>
+                            <li><strong>Arrumar pag - Forgot Password [X]</strong> - fazer lógica pra mudar a senha - []</li>
+                            <li><strong>pagina configurações [X]</strong></li>
+                            <li>page messages[in progress]</li>
                         </ul>
                         <br/>
                         <br/>

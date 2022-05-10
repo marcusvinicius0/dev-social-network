@@ -20,7 +20,6 @@ export default function Modal({ close }) { //receber o 'conteudo' como params qu
                 <button className="make-public" onClick={() => console.log(publication)}>Publicar</button>
             )
         }
-        publicOrNot()
     }
 
     return (
