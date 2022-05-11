@@ -1,14 +1,18 @@
 import { useState, useContext } from 'react';
-import './settings.css';
+import './profile.css';
+
 import Sidebar from '../../Components/Sidebar';
 import avatar from '../../assets/avatar.png';
+import { ApiNews } from '../../Components/ApiNews';
+import {EditProfile } from '../../Components/EditProfile'
 
 import { AuthContext } from '../../contexts/auth';
 import firebase from '../../services/firebaseConnection';
 
-import { FiSettings, FiUpload } from 'react-icons/fi';
+import { FiUpload } from 'react-icons/fi';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
+
 
 function Profile() {
     const { user, setUser, storageUser } = useContext(AuthContext);
@@ -19,6 +23,8 @@ function Profile() {
 
     const [avatarUrl, setAvatarUrl] = useState(user && user.avatarUrl);
     const [imageAvatar, setImageAvatar] = useState(null);
+
+    const [isModalActive, setIsModalActive] = useState(false)
 
 
 
@@ -99,28 +105,34 @@ function Profile() {
 
     return (
         <div className="containerAll">
-            <div className='main-seetings-container'>
-                <div className="container-settings">
+            <main className="profile">
 
-                    <FiSettings className="icon-settings" size={35} color="#000000" />
+                <form className="form-profile" onSubmit={handleSave}>
 
-                    <form className="form-profile" onSubmit={handleSave}>
-                        <label className="label-avatar">
-                            <span>
-                                <FiUpload color="#FFF" size={25} />
-                            </span>
+                    <div className="containerProfile">
+                        <div className="containerInfoProfile">
+                            <div className="banner">
+                                <label className="label-avatar">
 
-                            <input className="input-file" type="file" accept="image/*" onChange={handleFile} /> <br />
-                            {avatarUrl === null ?
-                                <img src={avatar} width="150" height="150" alt="user-profile-picture" />
-                                :
-                                <img src={avatarUrl} width="150" height="150" alt="user-profile-picture" />
-                            }<br />
+                                    <input className="input-file" type="file" accept="image/*" onChange={handleFile} /> <br />
+                                    {avatarUrl === null ?
+                                        <img src={avatar} width="150" height="150" alt="user-profile-picture" />
+                                        :
+                                        <img src={avatarUrl} width="150" height="150" alt="user-profile-picture" />
+                                    }<br />
+                                </label>
+                                <button onClick={() => setIsModalActive(true)}>Editar perfil</button>
+                            </div>
+                            <div className="titleInfoProfile">
+                                <h1>{user.name}</h1>
+                                <span>Desenvolvedor Front End | ReactJS | JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
 
-                        </label>
 
 
-                        <label className="div-informations">
+                    {/*<label className="div-informations">
                             Nome
                             <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Edite seu nome...." />
                             Email
@@ -136,11 +148,16 @@ function Profile() {
                             </div>
 
                             <button type="submit">Salvar</button>
-                        </label>
+                        </label>*/}
 
-                    </form>
+                </form>
+
+                <div className="apiNews">
+                    <ApiNews />
                 </div>
-            </div>
+            </main>
+
+            {isModalActive && <EditProfile setIsModalActive={setIsModalActive}  /> }
 
         </div>
 

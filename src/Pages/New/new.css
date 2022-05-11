@@ -1,0 +1,69 @@
+.pageNew {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerNew {
+    background: #fff;
+    border-radius: 10px;
+    width: 70%;
+    height: 120vh;
+    border: 1px solid rgb(0,0,0,0.15);
+    position: relative;
+}
+
+.containerNew img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.contentNew {
+    position: absolute;
+    top: 17rem;
+    left: 0;
+    right: 0;
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 35px 30px;
+}
+
+.contentNew h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.contentNew p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #045AC5;
+}
+
+.descriptionNew {
+    margin-top: 1rem;
+}
+
+.descriptionNew span {
+    font-size: 0.9rem;
+
+}
+
+.descriptionNew p{
+    text-align: justify;
+    margin-top: 10px;
+    color: inherit;
+    font-weight: 400;
+}
+
+.api-news{
+    width: 300px;
+    height: 100%;;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,0.15);
+}

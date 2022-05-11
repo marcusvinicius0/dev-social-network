@@ -13,6 +13,7 @@ import { FiVideo } from 'react-icons/fi';
 import { useEffect, useState, useContext } from 'react';
 
 import { AuthContext } from '../../contexts/auth';
+import { ApiNews } from '../../Components/ApiNews';
 
 
 // //http://servicodados.ibge.gov.br/api/v3/noticias/
@@ -74,12 +75,11 @@ function Dashboard() {
                 </div>
 
                 <div className='api-news'>
-
+                    <ApiNews />
                 </div>
 
                 {showPostModal && (
                     <Modal
-                        // conteudo={detail}
                         close={togglePostModal}
                     />
                 )}
