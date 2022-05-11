@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+}
+
+a {
+    color: inherit;
+}
+
+.container h1 {
+    font-size: 1rem;
+    color: rgb(0,0,0, 0.65);
+}
+
+.listNews {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.listMoreOff {
+    height: 270px;
+}
+
+.listMoreOn {
+    height: 100%;
+} 
+
+.boxNew {
+    border-top: 1px solid rgb(0,0,0, 0.15);
+    padding: 5px 0 0 5px;
+    transition: background 0.4s;
+}
+
+.boxNew:hover {
+    background: rgb(0,0,0, 0.15);
+}
+
+.boxNew p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.boxNew span {
+    font-size: 0.7rem;
+}
+
+.container button {
+    margin-top: 10px;
+    background: none;
+    outline: none;
+    border: 0;
+    background: #045AC5;
+    padding: 8px 0;
+    color: #fff;
+    border-radius: 30px;
+}
