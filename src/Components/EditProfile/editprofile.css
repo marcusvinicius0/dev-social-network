@@ -59,7 +59,7 @@
     height: 150px;
 }
 
-form {
+.formEditProfile {
     padding: 3rem 2rem 0 2rem;
     width: 100%;
     display: flex;
@@ -67,7 +67,7 @@ form {
     gap: 1rem;
 }
 
-form input {
+.formEditProfile input {
     height: 40px;
     outline: none;
     border: 1px solid rgb(0,0,0,0.3);
@@ -75,7 +75,7 @@ form input {
     padding-left: 10px;
 }
 
-form textarea {
+.formEditProfile textarea {
     height: 80px;
     outline: none;
     border: 1px solid rgb(0,0,0,0.3);

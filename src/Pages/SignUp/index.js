@@ -22,41 +22,43 @@ function SignUp() {
     }
 
     return (
-        <div>
-            <div className="main-container">
-                <div className="pageRegister">
-                    <div className="dontHaveAccount">
-                        <div className="dontHaveAccountContent">
-                            <h1>Dev Social Network</h1>
-                            <p>Já tem uma conta?</p>
-                            <Link to="/">Login</Link>
-                        </div>
-                    </div>
-                    <div className="registerInfos">
-                        <div className="registerInfosContent">
-                            <h1>Olá, seja bem vindo(a)!</h1>
-                            <p>Se cadastre para começar</p>
-
-                            <form onSubmit={handleSubmit}>
-                                <div>
-                                    <FaUser />
-                                    <input type="text" placeholder="Digite seu nome" value={name} onChange={(e) => setName(e.target.value)} required />
-                                </div>
-                                <div>
-                                    <MdEmail />
-                                    <input type="text" className="input-email" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                                </div>
-                                <div>
-                                    <FaLock />
-                                    <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                                </div>
-                                <button type="submit"> {loadingAuth ? 'Cadastrando...' : 'Cadastrar'} </button>
-                            </form>
-                        </div>
-                    </div>
+        <div className="firstMainContainer">
+            <div className="containerToSignUp">
+                <h1>Dev Social Network</h1>
+                <div className="containerContent1">
+                    <p>Já possui uma conta?</p>
+                    <Link to="/">Faça login!</Link>
                 </div>
             </div>
+
+            <div className="containerToSignIn">
+
+                <div className="login">
+                    <h2 className="title-register">Faça seu cadastro</h2>
+
+                    <form className="formSignIn" onSubmit={handleSubmit}>
+
+                        <FaUser className="icons" size={23} color="#000" />
+                        <input type="text" placeholder="Digite seu nome" value={name} onChange={(e) => setName(e.target.value)} required />
+ 
+                        <MdEmail className="icons" size={23} color="#000" />
+                        <input type="text" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+
+                        <FaLock className="icons" size={20} color="#000" />
+
+                        <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
+
+
+                        <button type="submit">{loadingAuth ? 'Carregando...' : 'Cadastrar'}</button>
+                    </form>
+                </div>
+            </div>
+
+
+
         </div>
+
+
 
     )
 }

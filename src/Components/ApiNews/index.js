@@ -15,7 +15,7 @@ export function ApiNews() {
             <h1>DevSocialNetwork Notícias</h1>
             {<div className={seeMore ? "listNews listMoreOn" : "listNews listMoreOff"} >
                 {news.map(item => (
-                    <Link to={`/news/${item.id}`}>
+                    <Link key={item.id} to={`/news/${item.id}`}>
                         <div className="boxNew" key={item.id}>
                             <p>{item.title}</p>
                             <span>de {item.author}</span>

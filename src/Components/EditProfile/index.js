@@ -33,7 +33,7 @@ export function EditProfile({setIsModalActive}) {
                     </label>
                 </div>
 
-                <form>
+                <form className="formEditProfile">
                     <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome"/>
                     <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Título"/>
                     <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>

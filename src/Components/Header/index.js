@@ -26,28 +26,28 @@ export function Header() {
 
                         <Link to="/dashboard">
                             <div>
-                                <AiOutlineHome color="#028ACD" size={23} />
+                                <AiOutlineHome color="rgba(0, 0, 0, 0.6)" size={23} />
                                 <span>Início</span>
                             </div>
                         </Link>
 
                         <Link to="/dashboard">
                             <div>
-                                <FaUsers color="#028ACD"  size={23}/>
+                                <FaUsers color="rgba(0, 0, 0, 0.6)"  size={23}/>
                                 <span>Seguidores</span>
                             </div>
                         </Link>
 
                         <Link to="/messages">
                             <div>
-                                <BsFillChatDotsFill color="#028ACD"  size={23} />
+                                <BsFillChatDotsFill color="rgba(0, 0, 0, 0.6)"  size={23} />
                                 <span>Mensagens</span>
                             </div>
                         </Link>
 
                         <Link to="/settings">
                             <div>
-                                <FiSettings color="#028ACD"  size={23} />
+                                <FiSettings color="rgba(0, 0, 0, 0.6)"  size={23} />
                                 <span>Configurações</span>
                             </div>
                         </Link>

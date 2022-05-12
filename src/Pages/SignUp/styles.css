@@ -1,156 +1,55 @@
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-.pageRegister {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    margin-top: 0;
-}
-
-.dontHaveAccount {
-    width: 50%;
-    background: linear-gradient(to top right, #021B79, #045AC5 );
-    color: #fff;
+.containerContent1 {
+    padding-top: .2rem;
+    margin-left: -18rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
 }
 
-.dontHaveAccount h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
+.containerContent1 p {
+    color: #FFF;
+    margin-bottom: 1rem;
 }
 
-.dontHaveAccount p {
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-.dontHaveAccount a {
+.containerContent1 a {
+    width: 180px;
+    height: 35px;
     background: #045AC5;
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: #fff;
-    width: 150px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 20px;
-    margin-top: 10px;
-    transition: 0.3s;
+    color: #FFF;
+    padding: 5px 0 0 45px;
 }
 
-
-.dontHaveAccount a:hover {
+.containerContent1 a:hover {
     opacity: 0.8;
 }
 
-.dontHaveAccount a:active {
-    opacity: 0.6;
-}
-
-.registerInfos {
-    background: #E5E5E5;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #333333;
-}
-
-.registerInfosContent {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.registerInfosContent h1 {
-    font-size: 1.5rem;
-}
-
-.registerInfosContent form div {
-    width: 307px;
-    height: 50px;
-    border-radius: 30px;
-    border: 1px solid rgb(0,0,0,0.35);
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.registerInfosContent div svg {
-    width: 6%;
-    color: rgb(0,0,0,0.65);
-    height: 100%;
-    margin-left: 10px;
-    font-size: 0.5rem;
-}
-.registerInfosContent div input {
-    width: 90%;
-    height: 100%;
-    border: 0;
-    background: transparent;
-    margin-left: 1rem;
-}
-
-.registerInfosContent button {
-    width: 307px;
-    height: 50px;
-    border-radius: 30px;
-    border: 1px solid rgb(0,0,0,0.35);
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #045AC5;
-    border: 0;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-@media screen and (max-width: 870px) {
-    .dontHaveAccount h1 {
+@media(max-width: 1115px){
+    .login .title-register{
         font-size: 2rem;
-        font-weight: 600;
-    }
-    
-    .dontHaveAccount p {
-        font-size: 0.8rem;
-        font-weight: 400;
     }
 
-    .registerInfosContent div {
-        width: 307px;
-        height: 50px;
-    }
-
-    .registerInfosContent button {
-        width: 307px;
-        height: 40px;
+    .formSignIn{
+        margin-left: -1rem;
     }
 }
 
-@media screen and (max-width: 690px) { 
-    .pageRegister {
-        flex-direction: column;
+@media (max-width: 925px){
+    .containerToSignUp .containerContent1{
+        margin-left: -13.5rem;
     }
 
-    .registerInfos {
-        width: 100%;
-        padding: 3rem 0 ;
+    .login{
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 415px){
+    .containerToSignUp .containerContent1{
+        margin-left: -8.6rem;
     }
 
-    .dontHaveAccount {
-        width: 100%;
-        padding: 4.5rem 0;
+    .login{
+        margin-left: 2rem;
     }
-} 
-
-
+}

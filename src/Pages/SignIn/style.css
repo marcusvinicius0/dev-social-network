@@ -1,164 +1,152 @@
-* {
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-.pageLogin {
-    width: 100vw;
-    height: 100vh;
+.firstMainContainer{
     display: flex;
-    flex-direction: row;
+    justify-content: row;
     margin-top: 0;
+    min-height: 100vh;
 }
 
-.haveAccount {
-    width: 50%;
-    background: linear-gradient(to top right, #021B79, #045AC5 );
-    color: #fff;
+.containerToSignUp {
+    width: 60%;
+    height: 100vh;
+    background: linear-gradient(to top right, #021B79, #045AC5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerToSignUp h1 {
+    color: #FFF;
+    font-size: 3rem;
+}
+
+.containerContent {
+    padding-top: .2rem;
+    margin-left: -15.2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
 }
 
-.haveAccount h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
+.containerContent p {
+    color: #FFF;
+    margin-bottom: 1rem;
 }
 
-.haveAccount p {
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-.haveAccount a {
+.containerContent a {
+    width: 180px;
+    height: 35px;
     background: #045AC5;
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: #fff;
-    width: 150px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 20px;
-    margin-top: 10px;
-    transition: 0.3s;
+    color: #FFF;
+    padding: 5px 0 0 10px;
 }
 
-
-.haveAccount a:hover {
+.containerContent a:hover {
     opacity: 0.8;
 }
 
-.haveAccount a:active {
-    opacity: 0.6;
-}
-
-.registerInfos {
-    background: #E5E5E5;
-    width: 50%;
+.containerToSignIn{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #333333;
-}
-
-.registerInfosContent {
-    display: flex;
     flex-direction: column;
 }
 
-
-.registerInfosContent h1 {
-    font-size: 1.5rem;
-}
-
-.registerInfosContent form div {
-    width: 307px;
-    height: 50px;
-    border-radius: 30px;
-    border: 1px solid rgb(0,0,0,0.35);
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-} 
-
-.registerInfosContent div svg {
-    width: 6%;
-    color: rgb(0,0,0,0.65);
-    height: 100%;
-    margin-left: 10px;
-    font-size: 0.5rem;
-}
-.registerInfosContent div input {
-    width: 90%;
-    height: 50%;
-    border: 0;
-    background: transparent;
-    margin-left: 1rem;
-}
-
-.registerInfosContent button {
-    width: 307px;
-    height: 50px;
-    border-radius: 30px;
-    border: 1px solid rgb(0,0,0,0.35);
-    margin-top: 1rem;
+.login{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #045AC5;
-    border: 0;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: 500;
+    flex-direction: column;   
 }
 
-.registerInfosContent a {
-    margin: 0 auto;
-    color: #333333;
+.login h2{
+    font-size: 2.2rem;
+    margin-left: 2.8rem;
+}
+
+
+form{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 5px;
-    font-size: 0.9rem;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 870px) {
-    .haveAccount h1 {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    
-    .haveAccount p {
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
-
-    .registerInfosContent div {
-        width: 307px;
-        height: 50px;
-    }
-
-    .registerInfosContent button {
-        width: 307px;
-        height: 40px;
-    }
+.icons{
+    position: relative;
+    top: 30px;
+    left: 5px;
 }
 
-@media screen and (max-width: 690px) { 
-    .pageLogin {
+.formSignIn input{
+    width: 19rem;
+    border-radius: 15px;
+    border: none;
+    height: 2.5rem;
+    padding-left: 2rem;
+}
+
+
+.formSignIn  button{
+    height: 40px;   
+    width: 19rem;
+    font-size: 1.2rem;  
+    margin-top: 1rem;   
+}
+
+.containerToSignIn a{
+    margin-top: 1rem;
+    margin-left: -3rem;
+    color: #000;
+}
+
+
+@media (max-width: 925px) {
+    .firstMainContainer {
         flex-direction: column;
     }
 
-    .registerInfos {
+    .containerToSignUp{
+        flex-direction: column;
         width: 100%;
-        padding: 3rem;
+        height: 50vh;   
     }
 
-    .haveAccount {
-        width: 100%;
-        padding: 4.5rem;
+    .containerToSignUp h1{
+        font-size: 2.5rem;
     }
-} 
+
+    .containerToSignUp .containerContent{
+        margin-left: -11rem;
+    }
+
+    .containerToSignIn{
+        margin-left: -6rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 472px){
+    .containerToSignUp{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 415px) {
+    .containerToSignUp h1 {
+        font-size: 2rem;
+    }
+
+    .containerToSignUp .containerContent{
+        margin-left: -6rem;
+    }
+
+    .login h2{
+        font-size: 2rem;
+    }
+}
