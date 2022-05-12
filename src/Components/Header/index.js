@@ -6,7 +6,7 @@ import { FaUsers } from 'react-icons/fa'
 import { BsFillChatDotsFill } from 'react-icons/bs'
 import { FiSettings, FiLogOut } from 'react-icons/fi'
 
-import logo from '../../assets/logo-social.png';
+import logo from '../../assets/logo.png';
 
 import { Link } from 'react-router-dom'
 
@@ -26,28 +26,28 @@ export function Header() {
 
                         <Link to="/dashboard">
                             <div>
-                                <AiOutlineHome color="#000000" size={23} />
+                                <AiOutlineHome color="#028ACD" size={23} />
                                 <span>Início</span>
                             </div>
                         </Link>
 
                         <Link to="/dashboard">
                             <div>
-                                <FaUsers color="#000000"  size={23}/>
-                                <span>Amigos</span>
+                                <FaUsers color="#028ACD"  size={23}/>
+                                <span>Seguidores</span>
                             </div>
                         </Link>
 
                         <Link to="/messages">
                             <div>
-                                <BsFillChatDotsFill color="#000000"  size={23} />
+                                <BsFillChatDotsFill color="#028ACD"  size={23} />
                                 <span>Mensagens</span>
                             </div>
                         </Link>
 
                         <Link to="/settings">
                             <div>
-                                <FiSettings color="#000000"  size={23} />
+                                <FiSettings color="#028ACD"  size={23} />
                                 <span>Configurações</span>
                             </div>
                         </Link>

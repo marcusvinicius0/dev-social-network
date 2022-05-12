@@ -44,7 +44,7 @@ export default function SideBar() {
                     <p>Mensagens</p>
                 </Link> */}
 
-                <Link to="/settings" >
+                <Link to="/profile" >
                     <CgProfile color="#000000" size={25} />
                     <p>Meu perfil</p>
                 </Link> 
