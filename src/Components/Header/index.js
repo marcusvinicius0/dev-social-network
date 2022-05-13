@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../contexts/auth'
 
 import { AiOutlineHome } from 'react-icons/ai'
@@ -6,6 +6,8 @@ import { FaUsers } from 'react-icons/fa'
 import { BsFillChatDotsFill } from 'react-icons/bs'
 import { FiSettings, FiLogOut } from 'react-icons/fi'
 import { BiSearchAlt } from 'react-icons/bi';
+
+import { UsersResults } from '../UsersResults'
 
 import logo from '../../assets/logo.png';
 
@@ -16,20 +18,24 @@ import './header.css'
 export function Header() {
     const { user, signOut } = useContext(AuthContext);
 
+    const [usersResults, setUsersResults] = useState(false)
+
     return (
         <>
             {user && (
                 <div className="header">
-                    <span className="logo">
+                    <div className="logo">
                         <img src={logo} alt="logo" />
-                    </span>
+
+                        <span className="search-bar">
+                            <button><BiSearchAlt color="rgba(0, 0, 0, 0.8)" size={23} /></button>
+                            <input type="text" placeholder="Pesquisar..." onFocus={() => setUsersResults(true)}/>
+                        </span>
+                    </div>
 
 
                     <nav className="optionsNav">
-                        <span className="search-bar">
-                            <BiSearchAlt color="rgba(0, 0, 0, 0.6)" size={23} />
-                            <input type="text" placeholder="Pesquisar..." />
-                        </span>
+
                         <Link to="/dashboard">
                             <div>
                                 <AiOutlineHome color="rgba(0, 0, 0, 0.6)" size={23} />
@@ -59,11 +65,11 @@ export function Header() {
                         </Link>
                     </nav>
 
-                    <button onClick={signOut} className="buttonSignOut"><FiLogOut size={25} />
-                        <label>Sair</label>
-                    </button>
+                    <button onClick={signOut} className="buttonSignOut"><FiLogOut size={25} /></button>
                 </div>
             )}
+
+            {/*<UsersResults />*/}
         </>
     )
 }

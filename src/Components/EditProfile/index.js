@@ -15,8 +15,8 @@ export function EditProfile({ setIsModalActive }) {
 
     const [name, setName] = useState(user && user.name)
     const [email, setEmail] = useState(user && user.email)
-    const [title, setTitle] = useState("")
-    const [description, setDescription] = useState("")
+    const [title, setTitle] = useState(user && user.title)
+    const [description, setDescription] = useState(user && user.description)
 
     const [avatarUrl, setAvatarUrl] = useState(user && user.avatarUrl);
     const [imageAvatar, setImageAvatar] = useState(null);
@@ -57,12 +57,16 @@ export function EditProfile({ setIsModalActive }) {
                             .update({
                                 avatarUrl: urlFoto,
                                 name: name,
+                                title: title,
+                                description: description
                             })
                             .then(() => {
                                 let data = {
                                     ...user,
                                     avatarUrl: urlFoto,
                                     name: name,
+                                    title: title,
+                                    description: description
                                 };
                                 setUser(data);
                                 storageUser(data);
@@ -79,12 +83,16 @@ export function EditProfile({ setIsModalActive }) {
             await firebase.firestore().collection('users')
                 .doc(user.uid)
                 .update({
-                    name: name
+                    name: name,
+                    title: title,
+                    description: description
                 })
                 .then(() => {
                     let data = {
                         ...user,
-                        name: name
+                        name: name,
+                        title: title,
+                        description: description
                     };
                     setUser(data)
                     storageUser(data)
@@ -92,7 +100,7 @@ export function EditProfile({ setIsModalActive }) {
         }
         else if (name !== '' && imageAvatar !== null) {
             handleUpload()
-        }
+        } 
     }
 
     return (
