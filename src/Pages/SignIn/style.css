@@ -95,6 +95,10 @@ form{
     width: 19rem;
     font-size: 1.2rem;  
     margin-top: 1rem;   
+    background-color: #0452BC;
+    border: 0;
+    border-radius: 15px;
+    color: #FFF;
 }
 
 .containerToSignIn a{

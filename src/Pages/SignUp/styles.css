@@ -24,6 +24,31 @@
     opacity: 0.8;
 }
 
+.formSignIn1{
+    margin-left: -1.5rem;
+}
+
+.formSignIn1 input{
+    width: 19rem;
+    border-radius: 15px;
+    border: none;
+    height: 2.5rem;
+    padding-left: 2rem;
+}
+
+
+.formSignIn1  button{
+    height: 40px;   
+    width: 19rem;
+    font-size: 1.2rem;  
+    margin-top: 1rem;   
+    background-color: #0452BC;
+    border: 0;
+    border-radius: 15px;
+    color: #FFF;
+}
+
+
 @media(max-width: 1115px){
     .login .title-register{
         font-size: 2rem;

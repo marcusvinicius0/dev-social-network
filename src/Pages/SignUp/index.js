@@ -36,7 +36,7 @@ function SignUp() {
                 <div className="login">
                     <h2 className="title-register">Faça seu cadastro</h2>
 
-                    <form className="formSignIn" onSubmit={handleSubmit}>
+                    <form className="formSignIn1" onSubmit={handleSubmit}>
 
                         <FaUser className="icons" size={23} color="#000" />
                         <input type="text" placeholder="Digite seu nome" value={name} onChange={(e) => setName(e.target.value)} required />
