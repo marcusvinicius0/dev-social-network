@@ -101,6 +101,23 @@ form{
     color: #FFF;
 }
 
+.formSignIn button:disabled{
+    cursor: not-allowed;
+}
+
+.formSignIn button svg{
+    animation: animate 2s infinite;
+}
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .containerToSignIn a{
     margin-top: 1rem;
     margin-left: -3rem;

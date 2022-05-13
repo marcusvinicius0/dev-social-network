@@ -1,3 +1,25 @@
-.registerInfosContent, form, .typenewpassword{
-    margin-top: 10px;
+.containerContent2 {
+    background-color: #045AC5;
+    margin-left: -18rem;
+    border-radius: 15px;
+    height: 35px;
+    width: 180px;
+    padding: 5px 0 0 45px;
+    color: #FFF;
+}
+
+.containerContent2 a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 925px){
+    .containerContent2{
+        margin-left: -13.5rem;
+    }
+}
+
+@media (max-width: 415px){
+    .containerContent2{
+        margin-left: -8.5rem;
+    }
 }

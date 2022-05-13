@@ -72,7 +72,7 @@ function AuthProvider({ children }) {
                             uid: uid,
                             name: name,
                             email: value.user.email,
-                            avatarUrl: null
+                            avatarUrl: null,
                         };
 
                         setUser(data);
@@ -110,7 +110,7 @@ function AuthProvider({ children }) {
             signIn,
             loadingAuth,
             setUser,
-            storageUser
+            storageUser,
         }}>
             {children}
         </AuthContext.Provider>

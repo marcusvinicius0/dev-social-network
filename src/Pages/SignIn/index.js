@@ -5,15 +5,18 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
 import { useContext, useState } from 'react';
 
+import firebase from '../../services/firebaseConnection';
 
 import { FaLock } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import { FaSpinner } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 export default function SignIn() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const { signIn, loadingAuth } = useContext(AuthContext);
+    const { signIn, loadingAuth, user } = useContext(AuthContext);
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -22,6 +25,7 @@ export default function SignIn() {
             signIn(email, password)
         }
     }
+
 
     return (
         <div className='firstMainContainer'>
@@ -48,11 +52,11 @@ export default function SignIn() {
                         <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
 
 
-                        <button type="submit">{loadingAuth ? 'Carregando...' : 'Acessar'}</button>
+                        <button disabled={loadingAuth} type="submit">{loadingAuth ? <FaSpinner color="#FFF" size={16} /> : 'Acessar'}</button>
                     </form>
                 </div>
 
-                <Link to="/forgotpassword" className="linkForgotPassword">Esqueceu a senha?</Link>
+               <Link to="/forgotpassword"className="linkForgotPassword">Recuperar senha</Link>
             </div>
         </div>
     )
