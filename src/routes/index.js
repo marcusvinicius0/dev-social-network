@@ -9,6 +9,7 @@ import Dashboard from '../Pages/Dashboard';
 import Profile from '../Pages/Profile'
 import Messages from '../Pages/Messages';
 import New from '../Pages/New';
+import ProfileUser from '../Pages/ProfileUser';
 
 import Error from '../Pages/Error'
 
@@ -25,6 +26,7 @@ export default function MyRoutes(){
             <Route exact path="/messages" component={Messages} isPrivate />
             <Route exact path="/profile" component={Profile} isPrivate />
             <Route exact path="/news/:id" component={New} isPrivate />
+            <Route exact path="/users/:id" component={ProfileUser} isPrivate />
 
             <Route  path="*" component={Error} />
             

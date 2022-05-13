@@ -4,7 +4,6 @@ import './editprofile.css';
 import avatar from '../../assets/avatar.png';
 
 import { AuthContext } from '../../contexts/auth';
-import firebase from '../../services/firebaseConnection';
 
 import { FiX } from 'react-icons/fi'
 
