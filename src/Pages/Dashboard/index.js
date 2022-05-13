@@ -57,13 +57,16 @@
                             <ul>
                                 <strong>Coisas q vou fazer</strong>
                                 <li><strong>Page seguidores</strong> [] </li>
-                                <li>Page Profile [in progress]</li>
-                                <li> - fazer lógica pra mudar a senha - []</li>
                                 <li>page messages[in progress]</li>
                             </ul>
                             <br />
                             <br />
                             <button onClick={() => alert('Lindo')}>TAMO JUNTOOOOOOOOOOOOOO</button>
+                            <br />
+                            <br />
+                            <p><strong>"Cada adversidade, cada fracasso traz consigo a semente de um benefício igual ou maior"</strong></p>
+                            <br/>
+                            <p>- Napoleon Hill</p>
                         </div>
                     </div>
 

@@ -4,7 +4,7 @@ import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
 
-import { FaUser, FaLock } from 'react-icons/fa'
+import { FaUser, FaLock, FaSpinner } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
 function SignUp() {
@@ -51,7 +51,7 @@ function SignUp() {
                         <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
 
 
-                        <button type="submit">{loadingAuth ? 'Carregando...' : 'Cadastrar'}</button>
+                        <button type="submit">{loadingAuth ?<FaSpinner color="#FFF" size={16} /> : 'Cadastrar'}</button>
                     </form>
                 </div>
             </div>
