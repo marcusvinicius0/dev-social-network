@@ -39,32 +39,15 @@ function Profile() {
                             </div>
                             <div className="titleInfoProfile">
                                 <h1>{user.name}</h1>
-                                <span>Desenvolvedor Front End | ReactJS | JavaScript</span>
+                                <span>{user.title}</span>
                             </div>
                         </div>
+
+                        <div className="containerAbout">
+                            <h1>Sobre</h1>
+                            <span>{user.description}</span>
+                        </div>
                     </div>
-
-
-
-                    {/*<label className="div-informations">
-                            Nome
-                            <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Edite seu nome...." />
-                            Email
-                            <input type="email" value={email} disabled={true} />
-
-                            <label>Descrição</label>
-                            <textarea maxLength="60" value={description} onChange={(e) => setDescription(e.target.value)} placeholder=" Max. 60 caracteres" />
-
-                            <div className="change-password">
-                                <Link to="/dashboard">
-                                    <p>Alterar senha</p>
-                                </Link>
-                            </div>
-
-                            <button type="submit">Salvar</button>
-                        </label>*/}
-
-       
 
                 <div className="apiNews">
                     <ApiNews />

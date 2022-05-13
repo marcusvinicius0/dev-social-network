@@ -41,7 +41,9 @@ function AuthProvider({ children }) {
                     uid: uid,
                     name: userProfile.data().name,
                     avatarUrl: userProfile.data().avatarUrl,
-                    email: value.user.email
+                    email: value.user.email,
+                    title: userProfile.data().title,
+                    description: userProfile.data().description
                 }
 
                 setUser(data);
@@ -56,8 +58,9 @@ function AuthProvider({ children }) {
             })
     }
 
-    async function signUp(email, password, name) {
+    async function signUp(email, password, name, description, title) {
         setLoadingAuth(true);
+
         await firebase.auth().createUserWithEmailAndPassword(email, password)
             .then(async (value) => {
                 let uid = value.user.uid;
@@ -66,13 +69,18 @@ function AuthProvider({ children }) {
                     .doc(uid).set({
                         name: name,
                         avatarUrl: null,
+                        description: description,
+                        title: title,
                     })
                     .then(() => {
                         let data = {
                             uid: uid,
                             name: name,
                             email: value.user.email,
+                            description: description,
+                            title: title,
                             avatarUrl: null,
+
                         };
 
                         setUser(data);

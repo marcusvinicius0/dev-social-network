@@ -1,4 +1,5 @@
 .header {
+    width: 100vw;
     position: fixed;
     top: 0rem;
     left: 0rem;
@@ -9,17 +10,52 @@
     align-items: center;
     justify-content: space-evenly;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: whitesmoke;
+    background-color: #fff;
 }
 
 .logo {
-    position: relative;
-    top: 15px;
-    left: -100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    background: red;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 35px;
+    background: #EEF3F8;
+    margin-left: 1rem;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    outline: none;
+    border: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar svg{
+    color: #000;
+    margin-left: 10px;
+}
+
+.search-bar input{
+    padding-left: 0.6rem;
+    border: 0;
+    background: transparent;
 }
 
 .optionsNav {
     display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .optionsNav div {
@@ -46,39 +82,11 @@
     
 }
 
-.optionsNav .search-bar{
-    position: relative;
-    left: -15rem;
-    top: 0.3rem;
-}
-
-.optionsNav .search-bar svg{
-    position: relative;
-    left: 2rem;
-    top: .5rem;
-}
-
-.search-bar input{
-    height: 1.7rem;
-    padding-left: 2rem;
-    border: 0;
-    border-radius: 15px;
-}
-
 .buttonSignOut {
     font-size: 1.4rem;
     background: transparent;
     border: none;
     font-size: 15px;
-    position: relative;
-    left: 8vw;
-}
-
-.buttonSignOut label{
-    cursor: pointer;
-    position: relative;
-    top: -6px;
-    left: 3px;
 }
 
 .buttonSignOut label:hover{
