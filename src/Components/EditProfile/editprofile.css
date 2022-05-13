@@ -83,7 +83,7 @@
     padding: 10px 0 0 10px;
 }
 
-form button {
+.formEditProfile button {
     margin-left: auto;
     outline: none;
     border: 0;
@@ -106,7 +106,7 @@ form button {
     color: #045AC5;
 }
 
-svg {
+.boxModal svg {
     font-size: 2rem;
     transition: 0.4s;
 }
