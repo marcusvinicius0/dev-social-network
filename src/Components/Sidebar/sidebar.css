@@ -34,7 +34,8 @@ label .aboutyourself{
     padding: 1vw;
     position: relative;
     top: -35px;
-    color: rgba(0,0,0,.6);;
+    color: rgba(0,0,0,.6);
+    
 }
 
 hr{
@@ -45,11 +46,19 @@ hr{
 }
 
 .links{
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 35px;
+    padding-left: 12px;
+    padding-top: 5px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    transition: background 0.4s;
+    width: 16.9rem;
+    height: 40px;
+}
+
+.links:hover{
+    background: rgb(0,0,0, 0.15);
 }
 
 .links  p{
@@ -58,10 +67,4 @@ hr{
     margin-top: -29px;
     transition: 0.2s;
     font-size: 14px;
-  
 }
-
-.links p:hover{
-    color: #028ACD;
-}
-

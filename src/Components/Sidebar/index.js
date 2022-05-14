@@ -29,26 +29,10 @@ export default function SideBar() {
             <hr />
 
             <div className="links">
-                {/* <Link to="/dashboard" >
-                    <FiHome color="#000000" size={25} />
-                    <p>Início</p>
-                </Link>
-
-                <Link to="/friends">
-                    <FiUser color="#000000" size={25} />
-                    <p>Amigos</p>
-                </Link> 
-
-                <Link to="/messages">
-                    <AiOutlineMessage color="#000000" size={25} />
-                    <p>Mensagens</p>
-                </Link> */}
-
                 <Link to="/profile" >
-                    <CgProfile color="#000000" size={25} />
+                    <CgProfile color="rgba(0, 0, 0, 0.7)" size={25} />
                     <p>Meu perfil</p>
                 </Link> 
-
             </div>
 
         </div>

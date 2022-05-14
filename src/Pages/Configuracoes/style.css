@@ -1,0 +1,39 @@
+.container-settings{
+    display: flex;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 50rem;
+    height: 30rem;
+    justify-content: flex-start;
+    margin-left: 5rem;
+}
+
+.container-settings .icon-settings-config{
+    position: relative;
+    left: 47.5rem;
+    top: 0.5rem;
+}
+
+.form-settings p{
+    padding-top: 5rem;
+    font-size: 22px;
+}
+
+.form-settings input{
+    border-radius: 15px;
+    border: 0;
+    padding-left: 2rem;
+    background-color: whitesmoke;
+    height: 2.3rem;
+    width: 20rem;
+}
+
+.form-settings button{
+    margin-top: 1rem;
+    width: 20rem;
+    height: 2.3rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #0452BC;
+    color: #FFF;
+}
