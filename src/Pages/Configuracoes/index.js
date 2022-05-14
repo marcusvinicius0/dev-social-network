@@ -13,13 +13,13 @@ function Settings() {
                 <form className="form-settings">
                     <p>Mudar senha</p>
                     <FaLock className="icons" size={20} color="#000" />
-                    <input type="password" placeholder="Digite sua senha" required />
+                    <input type="password" placeholder="Digite sua senha atual" required />
 
                     <FaLock className="icons" size={20} color="#000" />
                     <input type="password" placeholder="Digite sua nova senha" required />
 
                     <FaLock className="icons" size={20} color="#000" />
-                    <input type="password" placeholder="Digite sua nova senha" required />
+                    <input type="password" placeholder="Digite a senha novamente" required />
 
                     <button type="submit">Salvar alterações</button>
                 </form>

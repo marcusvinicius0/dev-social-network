@@ -43,7 +43,7 @@ export function Header() {
                             </div>
                         </Link>
 
-                        <Link to="/dashboard">
+                        <Link to="/myfollowers">
                             <div>
                                 <FaUsers color="rgba(0, 0, 0, 0.6)" size={23} />
                                 <span>Seguidores</span>

@@ -16,29 +16,31 @@
     right: 0;
     margin: 0 auto;
     background-color: #FFF;
-    height: 300px;
+    height: 315px;
     border-radius: 15px;
 }
 
 .container-modal h2{
     text-align: center;
-    padding-top: 1vw;
+    padding-top: .5vw;
+    margin-bottom: 1rem;
 }
 
 .container-modal hr{
     width: 97%;
-    margin-top: 6px;
+    position: relative;
+    top: 5rem;
     opacity: 0.3;
 }
 
 .container-modal .close{
-    margin-left: 530px;
-    margin-top: -25px;
     width: 15%;
     border: none;
     background: none;
     position: absolute;
     transition: all 1s;
+    top: .5rem;
+    left: 33rem;
 }
 
 .container-modal .close:hover{
@@ -59,6 +61,38 @@
     margin-left: 70px;
 }
 
+.container-modal  .user-infos-modal{
+    margin-top: 3rem;
+}
+
+.togglesOnStartPublication {
+    display: flex;
+    gap: 3rem;
+    margin-left: 2rem;
+}
+
+.togglesOnStartPublication div {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+.togglesOnStartPublication div:hover {
+    background:rgb(0,0,0,0.11);
+}
+
+.togglesOnStartPublication div p {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: rgb(0,0,0,0.75);
+}
+
+
 .container-modal textarea{
     border: none;
     width: 90%;
@@ -77,8 +111,8 @@
     width: 15%;
     height: 10%;
     position: absolute;
-    margin-top: 10px;
-    margin-left: 500px;
+    top: 17rem;
+    left: 31rem;
 }
 
 .container-modal .make-public:disabled{

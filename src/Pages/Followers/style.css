@@ -1,0 +1,26 @@
+.container-followers{
+    width: 70vw;
+    height: 80vh;
+    background-color: #FFF;
+    margin: 0 auto;
+}
+
+.container-followers h1{
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.picture1 img{
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.picture1 p{
+    margin-left: 3.5rem;
+    margin-top: -2rem;
+}

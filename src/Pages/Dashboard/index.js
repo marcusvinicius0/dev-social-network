@@ -55,9 +55,18 @@
 
                         <div className="feed">
                             <ul>
-                                <strong>Coisas q vou fazer</strong>
-                                <li><strong>Page seguidores</strong> [] </li>
-                                <li>page messages[in progress]</li>
+                                <strong>to do:</strong> 
+                                <li><strong>Page seguidores</strong> [X] </li> <br/>
+                                <li><strong>Page settings</strong> [X] </li> <br/>
+                                <li><strong>page messages</strong>[in progress]</li> <br/>
+                                <li><strong>Conseguir acessar perfil do usuário com uid</strong>[]</li> <br/>
+                                <li><strong>Funcionalidade para alterar senha atual</strong> []</li> <br/>
+                                <li><strong>Capa de fundo -banner- para usuários</strong> []</li> <br/>
+                                <li><strong>Arrumar modal da publicação</strong> [X]</li> <br/>
+                                <li><strong>Fazer publicação texto, fotos e video</strong> []</li> <br/>
+                                <li><strong>Encontrar perfil na barra de busca e funcionalidade para seguir os usuários</strong> []</li>
+                                <br/>
+                                <li><strong>Funcionalidade chat</strong> []</li>
                             </ul>
                             <br />
                             <br />

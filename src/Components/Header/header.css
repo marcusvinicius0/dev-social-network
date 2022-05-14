@@ -16,6 +16,8 @@
 .logo {
     display: flex;
     align-items: center;
+    position: relative;
+    left: -2rem;
 }
 
 .search-bar {
