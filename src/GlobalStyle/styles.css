@@ -38,6 +38,10 @@ input, textarea {
     outline: none;
 }
 
+img {
+    object-fit: cover;
+}
+
 .containerAll {
     margin-top: 5rem;
 }

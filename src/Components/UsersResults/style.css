@@ -1,0 +1,47 @@
+.boxUserResults {
+    width: 400px;
+    max-height: 500px;
+    background: #fff;
+    position: absolute;
+    top: 3rem;
+    right: -5rem;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.boxUserResults ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxUserResults img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.boxUserResults a {
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    transition: 0.25s;
+    gap: 3px;
+    font-size: 0.8rem;
+}
+
+.boxUserResults a:hover { 
+    background: rgba(0,0,0,0.1);
+}
+
+.linkToSeeMoreResults {
+    width: 100%;
+    background: transparent;
+    color: #028ACD;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}

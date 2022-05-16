@@ -23,7 +23,7 @@ export default function SideBar() {
 
             <label>
                 <p>{user.name}</p> <br/>
-                <p className="aboutyourself">Software developer • React.js | JavaScript</p>
+                <p className="aboutyourself">{user.title}</p>
             </label>
 
             <hr />
