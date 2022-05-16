@@ -19,7 +19,8 @@ function UsersProvider({ children }) {
                     allUsers.push({
                         id: user.id,
                         name: user.data().name,
-                        avatarUrl: user.data().avatarUrl
+                        avatarUrl: user.data().avatarUrl,
+                        title: user.data().title
                     })
                 })
                 

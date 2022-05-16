@@ -10,7 +10,7 @@ import { AuthContext } from '../../contexts/auth';
 
 
 function Profile() {
-    const { user, setUser, storageUser } = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
 
     const [avatarUrl, setAvatarUrl] = useState(user && user.avatarUrl);
     const [imageAvatar, setImageAvatar] = useState(null);

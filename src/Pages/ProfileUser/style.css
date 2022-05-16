@@ -1,4 +1,4 @@
-.profile {
+.profileUser {
     display: flex;
     width: 80vw;
     margin: 0 auto;
@@ -12,12 +12,12 @@
     position: relative;
 }
 
-.containerProfile {
+.containerProfileUser {
     width: 100%;
     margin-right: 2rem;
 }
 
-.containerInfoProfile {
+.containerInfoProfileUser {
     width: 100%;
     margin-right: 2rem;
     background: #fff;
@@ -36,6 +36,13 @@
     font-weight: 600;
     padding: 5px 15px;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.banner svg {
+    font-size: 1.1rem;
 }
 
 .label-avatar {
@@ -73,11 +80,11 @@
 }
 
 
-.titleInfoProfile {
+.titleInfoProfileUser {
     margin: 3.2rem 0 0 50px;
 }
 
-.titleInfoProfile h1 {
+.titleInfoProfileUser h1 {
     font-size: 1.5rem;
 }
 

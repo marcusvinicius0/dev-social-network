@@ -24,12 +24,14 @@ export function Header() {
         <>
             {user && (
                 <div className="header">
+
                     <div className="logo">
                         <img src={logo} alt="logo" />
 
                         <span className="search-bar">
                             <button><BiSearchAlt color="rgba(0, 0, 0, 0.8)" size={23} /></button>
-                            <input type="text" placeholder="Pesquisar..." onFocus={() => setUsersResults(true)}/>
+                            <input type="text" placeholder="Pesquisar..." onFocus={() => setUsersResults(true)} />
+                            {usersResults && <UsersResults />}
                         </span>
                     </div>
 
@@ -68,8 +70,6 @@ export function Header() {
                     <button onClick={signOut} className="buttonSignOut"><FiLogOut size={25} /></button>
                 </div>
             )}
-
-            {/*<UsersResults />*/}
         </>
     )
 }
