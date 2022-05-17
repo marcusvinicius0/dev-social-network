@@ -43,7 +43,8 @@ function AuthProvider({ children }) {
                     avatarUrl: userProfile.data().avatarUrl,
                     email: value.user.email,
                     title: userProfile.data().title,
-                    description: userProfile.data().description
+                    description: userProfile.data().description,
+                    password: password,
                 }
 
                 setUser(data);
@@ -71,6 +72,7 @@ function AuthProvider({ children }) {
                         avatarUrl: null,
                         description: description,
                         title: title,
+                        password: password,
                     })
                     .then(() => {
                         let data = {
@@ -80,7 +82,7 @@ function AuthProvider({ children }) {
                             description: description,
                             title: title,
                             avatarUrl: null,
-
+                            password: password,
                         };
 
                         setUser(data);

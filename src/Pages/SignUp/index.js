@@ -35,7 +35,7 @@ function SignUp() {
 
             <div className="containerToSignIn">
 
-                <div className="login">
+                <div className="login1">
                     <h2 className="title-register">Faça seu cadastro</h2>
 
                     <form className="formSignIn1" onSubmit={handleSubmit}>

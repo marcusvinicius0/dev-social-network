@@ -1,7 +1,6 @@
 import { createContext, useEffect, useState } from "react";
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 import firebase from '../services/firebaseConnection';
-import { toast } from 'react-toastify';
 
 export const UsersContext = createContext({});
 

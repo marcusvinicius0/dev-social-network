@@ -1,24 +1,29 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../contexts/auth'
 
 import { AiOutlineHome } from 'react-icons/ai'
 import { FaUsers } from 'react-icons/fa'
 import { BsFillChatDotsFill } from 'react-icons/bs'
-import { FiSettings, FiLogOut } from 'react-icons/fi'
+import { FiSettings, FiLogOut, FiSearch } from 'react-icons/fi'
 import { BiSearchAlt } from 'react-icons/bi';
 
-import { UsersResults } from '../UsersResults'
+// import { UsersResults } from '../UsersResults'
+
+import { UsersContext } from '../../contexts/users'
 
 import logo from '../../assets/logo.png';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-import './header.css'
+import './header.css';
 
 export function Header() {
     const { user, signOut } = useContext(AuthContext);
+    const { users } = useContext(UsersContext);
+    const [search, setSearch] = useState("");
+    const [showResults, setShowResults] = useState(false);
 
-    const [usersResults, setUsersResults] = useState(false)
+   
 
     return (
         <>
@@ -29,12 +34,15 @@ export function Header() {
                         <img src={logo} alt="logo" />
 
                         <span className="search-bar">
+
                             <button><BiSearchAlt color="rgba(0, 0, 0, 0.8)" size={23} /></button>
-                            <input type="text" placeholder="Pesquisar..." onFocus={() => setUsersResults(true)} />
-                            {usersResults && <UsersResults />}
+                            <input type="text" placeholder="Pesquisar..." value={search} onChange={(e) => setSearch(e.target.value)}
+                                onClick={() => setShowResults(!showResults)}
+                            />
+
+
                         </span>
                     </div>
-
 
                     <nav className="optionsNav">
 

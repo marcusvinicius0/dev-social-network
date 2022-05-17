@@ -73,6 +73,7 @@ body {
 form{
     display: flex;
     flex-direction: column;
+    margin-left: 3rem;
 }
 
 .icons{
@@ -124,6 +125,16 @@ form{
     color: #000;
 }
 
+@media (max-width: 1115px){
+    .containerToSignIn{
+        margin-left: 0rem;
+    }
+
+    .containerToSignIn h2{
+        margin-left: 2rem;
+    }
+}
+
 
 @media (max-width: 925px) {
     .firstMainContainer {
@@ -145,7 +156,7 @@ form{
     }
 
     .containerToSignIn{
-        margin-left: -6rem;
+        margin-left: -4rem;
         margin-top: 1rem;
     }
 }

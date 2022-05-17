@@ -20,12 +20,17 @@
     padding: 5px 0 0 45px;
 }
 
+.login1 h2{
+    margin-left: 2.5rem;
+    font-size: 2rem;
+}
+
 .containerContent1 a:hover {
     opacity: 0.8;
 }
 
 .formSignIn1{
-    margin-left: -1.5rem;
+    margin-left: 2.5rem;
 }
 
 .formSignIn1 input{
@@ -50,12 +55,12 @@
 
 
 @media(max-width: 1115px){
-    .login .title-register{
+    .login1 .title-register{
         font-size: 2rem;
     }
 
-    .formSignIn{
-        margin-left: -1rem;
+    .formSignIn1{
+        margin-left: 2rem;
     }
 }
 
@@ -64,7 +69,7 @@
         margin-left: -13.5rem;
     }
 
-    .login{
+    .login1{
         margin-top: -1rem;
     }
 }
@@ -74,7 +79,8 @@
         margin-left: -8.6rem;
     }
 
-    .login{
+    .login1{
         margin-left: 2rem;
     }
+    
 }
