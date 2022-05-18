@@ -1,51 +1,21 @@
-.containerContent1 {
-    padding-top: .2rem;
-    margin-left: -18rem;
+.formSignUp {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
-.containerContent1 p {
-    color: #FFF;
-    margin-bottom: 1rem;
-}
-
-.containerContent1 a {
-    width: 180px;
-    height: 35px;
-    background: #045AC5;
-    border-radius: 20px;
-    color: #FFF;
-    padding: 5px 0 0 45px;
-}
-
-.login1 h2{
-    margin-left: 2.5rem;
-    font-size: 2rem;
-}
-
-.containerContent1 a:hover {
-    opacity: 0.8;
-}
-
-.formSignIn1{
-    margin-left: 2.5rem;
-}
-
-.formSignIn1 input{
+.formSignUp input{
     width: 19rem;
     border-radius: 15px;
     border: none;
-    height: 2.5rem;
-    padding-left: 2rem;
+    height: 2.6rem;
+    padding-left: 2.5rem;
+    border: 1px solid rgba(0,0,0,0.15);
 }
 
 
-.formSignIn1  button{
-    height: 40px;   
-    width: 19rem;
-    font-size: 1.2rem;  
+.formSignUp  button{
+    padding: 5px 30px;
+    font-size: 1rem;  
     margin-top: 1rem;   
     background-color: #0452BC;
     border: 0;
@@ -53,34 +23,10 @@
     color: #FFF;
 }
 
-
-@media(max-width: 1115px){
-    .login1 .title-register{
-        font-size: 2rem;
-    }
-
-    .formSignIn1{
-        margin-left: 2rem;
-    }
+.formSignUp button:disabled{
+    cursor: not-allowed;
 }
 
-@media (max-width: 925px){
-    .containerToSignUp .containerContent1{
-        margin-left: -13.5rem;
-    }
-
-    .login1{
-        margin-top: -1rem;
-    }
-}
-
-@media (max-width: 415px){
-    .containerToSignUp .containerContent1{
-        margin-left: -8.6rem;
-    }
-
-    .login1{
-        margin-left: 2rem;
-    }
-    
+.formSignUp button svg{
+    animation: animate 2s infinite;
 }

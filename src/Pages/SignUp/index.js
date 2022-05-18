@@ -27,7 +27,7 @@ function SignUp() {
         <div className="firstMainContainer">
             <div className="containerToSignUp">
                 <h1>Dev Social Network</h1>
-                <div className="containerContent1">
+                <div className="containerContent">
                     <p>Já possui uma conta?</p>
                     <Link to="/">Faça login!</Link>
                 </div>
@@ -35,19 +35,18 @@ function SignUp() {
 
             <div className="containerToSignIn">
 
-                <div className="login1">
+                <div className="login">
                     <h2 className="title-register">Faça seu cadastro</h2>
 
-                    <form className="formSignIn1" onSubmit={handleSubmit}>
+                    <form className="formSignUp" onSubmit={handleSubmit}>
 
-                        <FaUser className="icons" size={23} color="#000" />
+                        <FaUser className="icons" size={20} color="rgba(0,0,0,0.55)" />
                         <input type="text" placeholder="Digite seu nome" value={name} onChange={(e) => setName(e.target.value)} required />
  
-                        <MdEmail className="icons" size={23} color="#000" />
+                        <MdEmail className="icons" size={20} color="rgba(0,0,0,0.55)" />
                         <input type="text" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required />
 
-                        <FaLock className="icons" size={20} color="#000" />
-
+                        <FaLock className="icons" size={18} color="rgba(0,0,0,0.55)" />
                         <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
 
 
