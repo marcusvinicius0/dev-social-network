@@ -44,19 +44,17 @@ export default function SignIn() {
 
                     <form className="formSignIn" onSubmit={handleSubmit}>
 
-                        <MdEmail className="icons" size={23} color="#000" />
+                        <MdEmail className="icons" size={20} color="rgba(0,0,0,0.55)" />
                         <input type="text" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required />
 
-                        <FaLock className="icons" size={20} color="#000" />
-
+                        <FaLock className="icons" size={18} color="rgba(0,0,0,0.55)" />
                         <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
 
 
                         <button disabled={loadingAuth} type="submit">{loadingAuth ? <FaSpinner color="#FFF" size={16} /> : 'Acessar'}</button>
                     </form>
+                    <Link to="/forgotpassword"className="linkForgotPassword">Recuperar senha</Link>
                 </div>
-
-               <Link to="/forgotpassword"className="linkForgotPassword">Recuperar senha</Link>
             </div>
         </div>
     )

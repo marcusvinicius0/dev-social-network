@@ -140,7 +140,9 @@ export function EditProfile({ setIsModalActive }) {
                     <button type="submit">Salvar</button>
                 </form>
 
-                <button className="buttonClose" type="button" onClick={() => setIsModalActive(false)}><FiX /></button>
+                <div className="barToClose">
+                    <button className="buttonClose" type="button" onClick={() => setIsModalActive(false)}><FiX /></button>
+                </div>
             </div>
         </div>
     )

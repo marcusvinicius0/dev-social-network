@@ -11,7 +11,7 @@
 }
 
 .boxModal {
-    width: 37vw;
+    width: 37%;
     border-radius: 10px;
     background: #fff;
     position: relative;
@@ -94,11 +94,12 @@
 }
 
 .formEditProfile {
-    padding: 3rem 2rem 0 0;
+    padding-top: 3rem;
     width: 87%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin: 0 auto;
 }
 
 .formEditProfile input {
@@ -134,8 +135,8 @@
 
 .buttonClose {
     position: absolute;
-    top: 0.7rem;
-    right: 1rem;
+    top: 0.3rem;
+    right: 0.6rem;
     background: transparent;
     outline: none;
     border: 0;
@@ -146,6 +147,28 @@
 }
 
 .boxModal svg {
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: 0.4s;
+}
+
+.barToClose {
+    width: 100%;
+    height: 2rem;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+@media only screen and (max-width:1000px) {
+    .boxModal {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .boxModal {
+        width: 80%;
+    }
 }
