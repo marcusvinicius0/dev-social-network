@@ -63,8 +63,8 @@ function Dashboard() {
                             <li><strong>Funcionalidade para alterar senha atual</strong> []</li> <br />
                             <li><strong>Capa de fundo -banner- para usuários</strong> []</li> <br />
                             <li><strong>Arrumar modal da publicação</strong> [X]</li> <br />
-                            <li><strong>Fazer publicação texto, fotos e video</strong> []</li> <br />
-                            <li><strong>Encontrar perfil na barra de busca</strong> []</li>
+                            <li><strong>Fazer publicação texto, fotos e video</strong> [X]</li> <br />
+                            <li><strong>Encontrar perfil na barra de busca</strong> [X]</li>
                             <li><strong>Seguir usuarios</strong> []</li>
                             <br />
                             <li><strong>Funcionalidade chat</strong> []</li>

@@ -41,6 +41,7 @@ function AuthProvider({ children }) {
                     uid: uid,
                     name: userProfile.data().name,
                     avatarUrl: userProfile.data().avatarUrl,
+                    bannerUrl: userProfile.data().bannerUrl,
                     email: value.user.email,
                     title: userProfile.data().title,
                     description: userProfile.data().description,
@@ -70,6 +71,7 @@ function AuthProvider({ children }) {
                     .doc(uid).set({
                         name: name,
                         avatarUrl: null,
+                        bannerUrl: null,
                         description: description,
                         title: title,
                         password: password,
@@ -82,6 +84,7 @@ function AuthProvider({ children }) {
                             description: description,
                             title: title,
                             avatarUrl: null,
+                            bannerUrl: null,
                             password: password,
                         };
 

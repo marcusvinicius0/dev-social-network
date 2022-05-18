@@ -20,7 +20,15 @@ export function EditProfile({ setIsModalActive }) {
 
     const [avatarUrl, setAvatarUrl] = useState(user && user.avatarUrl);
     const [imageAvatar, setImageAvatar] = useState(null);
+    const [bannerUrl, setBannerUrl] = useState(user && user.bannerUrl);
 
+
+
+    function handleFileBanner(e){
+
+        
+
+    }
 
     function handleFile(e) {
 
@@ -100,7 +108,7 @@ export function EditProfile({ setIsModalActive }) {
         }
         else if (name !== '' && imageAvatar !== null) {
             handleUpload()
-        } 
+        }
     }
 
     return (
@@ -108,10 +116,15 @@ export function EditProfile({ setIsModalActive }) {
             <div className="boxModal">
 
                 <form className="formEditProfile" onSubmit={handleSave}>
-                    <div className="bannerEditProfile">
+                    <div className="boxEditProfile">
+                        <label className="bannerEditeProfile" onChange={handleFileBanner}>
+                        <FiUpload className="avatar-upload-banner" color="#FFF" size={25} />
+                            <input type="file" accept="image/*" />
+                            
+                        </label>
                         <label className="avatarEditProfile" onChange={handleFile}>
                             <FiUpload className="avatar-upload" color="#FFF" size={30} />
-                            <input className="input-file" type="file" accept="image/*" /> <br />
+                            <input type="file" accept="image/*" /> <br />
                             {avatarUrl === null ?
                                 <img src={avatar} width="150" height="150" alt="user-profile-picture" />
                                 :
